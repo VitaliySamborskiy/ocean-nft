@@ -107,7 +107,10 @@
 } 
 
 :root {
-    --background-color: #01204C;
+    --blue-background-color: #210C3B;
+    --white-fonts-color: #FFFFFF;
+    --violet-blue-gradient: linear-gradient(272deg, #43A5E3 46.06%, #FF56F6 81.53%);
+    --blue-violet-gradient: linear-gradient(90deg, #42A6E3 2.33%, #FF56F6 101.4%);
 }
 
 /*base*/
@@ -116,6 +119,115 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--background-color);
+body {
+    background-color: var(--blue-background-color);
+    color: var(--white-fonts-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--white-fonts-color);
+    font-family: Orbitron;
+}
+
+h1,h2,h3 {
+    font-family: Orbitron;
+}
+
+/*header-section*/
+
+.header-section {
+    margin-top: 42.1px ;
+    max-width: 1373.61px;
+}
+
+.header-navigation {
+    gap: 66.33px;
+}
+
+.menu-navigation {
+    gap: 40.9px;
+}
+
+.link-navigation {
+    font-size: 19.898px;
+    font-weight: 700;
+    font-family: Orbitron;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.link-navigation:hover {
+    opacity: 1;
+    color: var(--white-fonts-color);
+}
+
+/*main-page*/
+
+.main-page {
+    margin-top: 116.07px;
+    width: 760px;
+}
+
+.main-gradient {
+    background: var(--violet-blue-gradient) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titel-main-page {
+    font-size: 66.33px;
+    font-weight: 600;
+    line-height: 137.4%;
+    font-family: Spartan;
+}
+
+.text-main-page {
+    width: 700px;
+    margin-top: 45.86px;
+    font-size: 26.531px;
+    font-weight: 400;
+    line-height: 44.218px;
+    font-family: Rajdhani;
+}
+
+.main-arrow  {
+    margin-left: 11.05px;
+}
+
+.main-button {
+   margin-top: 43.11px; 
+}
+
+.buttom-main-text {
+    margin-left: 37.59px;
+    font-size: 19.898px;
+    font-weight: 700;
+    background: var(--blue-violet-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-button {
+    font-size: 19.898px;
+    font-weight: 700;
+}
+
+.main-botton-background {
+    padding: 19.9px 32.06px 18.79px 67.43px;
+    background: var(--blue-violet-gradient);
+    border-radius: 2px;
+    
+}
+
+/*desktop-page*/
+
+@media (max-width: 1920px) {
+    .container-xxl {
+        max-width: 1400px;
+        padding: 0;
+    }
 }

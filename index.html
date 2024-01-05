@@ -2,31 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OceanNFT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/spartan" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <nav>
-                <ul class="nav header-link-list">
+        <div class="container-xxl">
+            <nav class="d-flex header-section align-items-center justify-content-between">
+                <a class="text-decoration-none header-nav list-unstyled" href="#"><img src="./img/logo.png" alt="Logo Ocean NFT"></a>
+                <ul class="nav header-link-list header-navigation">
                     <li>
-                        <a class="text-decoration-none header-nav" href="#"><img src="./img/logo.svg" alt="Logo Ocean NFT"></a>
+                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Market</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none header-nav" href="#">Market</a>
+                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Features</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none header-nav" href="#">Features</a>
+                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Community</a>
                     </li>
+                </ul>
+                <ul class="nav header-link-list menu-navigation">
                     <li>
-                        <a class="text-decoration-none header-nav" href="#">Community</a>
-                    </li>
-                    <li>
-                        <a class="text-decoration-none header-nav" href="#">
+                        <a class="text-decoration-none header-nav list-unstyled" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <path d="M6.71008 9.23486H23.2247C23.5594 9.23488 23.8903 9.30501 24.1961 9.44073C24.502 9.57646 24.776 9.77477 25.0006 10.0229C25.2251 10.271 25.3951 10.5634 25.4998 10.8813C25.6044 11.1991 25.6412 11.5354 25.6079 11.8683L24.8894 19.0538C24.8303 19.6448 24.5537 20.1928 24.1133 20.5914C23.6729 20.9899 23.1001 21.2106 22.5062 21.2107H11.0693C10.5154 21.2109 9.97849 21.0191 9.55008 20.668C9.12167 20.3169 8.82819 19.8281 8.71962 19.285L6.71008 9.23486Z" stroke="white" stroke-width="2.21092" stroke-linejoin="round"/>
                                 <path d="M6.71011 9.23466L5.74007 5.3509C5.6752 5.09193 5.52565 4.86206 5.31518 4.69781C5.10471 4.53356 4.84539 4.44434 4.57842 4.44434H3.11737" stroke="white" stroke-width="2.21092" stroke-linecap="round" stroke-linejoin="round"/>
@@ -36,7 +37,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="text-decoration-none header-nav" href="#">
+                        <a class="text-decoration-none header-nav list-unstyled" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4208 21.1717C16.9155 21.1717 21.37 16.7173 21.37 11.2226C21.37 5.72788 16.9155 1.27343 11.4208 1.27343C5.92612 1.27343 1.47167 5.72788 1.47167 11.2226C1.47167 16.7173 5.92612 21.1717 11.4208 21.1717ZM11.4208 22.2772C17.5263 22.2772 22.4754 17.328 22.4754 11.2226C22.4754 5.11712 17.5263 0.167969 11.4208 0.167969C5.31536 0.167969 0.366211 5.11712 0.366211 11.2226C0.366211 17.328 5.31536 22.2772 11.4208 22.2772Z" fill="white"/>
                                 <path d="M4.78809 17.6508C4.78809 17.0799 5.21479 16.5973 5.783 16.5343C10.0473 16.0623 12.8137 16.1048 17.0686 16.5448C17.2811 16.5671 17.4825 16.6508 17.6482 16.7857C17.8139 16.9206 17.9367 17.1008 18.0016 17.3043C18.0666 17.5079 18.0709 17.7259 18.0139 17.9318C17.957 18.1377 17.8413 18.3226 17.6811 18.4639C12.6595 22.841 9.78974 22.7807 5.14183 18.4683C4.91521 18.2583 4.78809 17.9598 4.78809 17.6514V17.6508Z" fill="white"/>
@@ -45,12 +46,39 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4206 12.3281C12.3002 12.3281 13.1437 11.9787 13.7657 11.3567C14.3876 10.7348 14.737 9.89124 14.737 9.01168C14.737 8.13213 14.3876 7.28859 13.7657 6.66665C13.1437 6.04471 12.3002 5.6953 11.4206 5.6953C10.5411 5.6953 9.69753 6.04471 9.07558 6.66665C8.45364 7.28859 8.10424 8.13213 8.10424 9.01168C8.10424 9.89124 8.45364 10.7348 9.07558 11.3567C9.69753 11.9787 10.5411 12.3281 11.4206 12.3281ZM11.4206 13.4335C12.5934 13.4335 13.7181 12.9677 14.5473 12.1384C15.3766 11.3091 15.8425 10.1844 15.8425 9.01168C15.8425 7.83894 15.3766 6.71423 14.5473 5.88497C13.7181 5.05571 12.5934 4.58984 11.4206 4.58984C10.2479 4.58984 9.12316 5.05571 8.29391 5.88497C7.46465 6.71423 6.99878 7.83894 6.99878 9.01168C6.99878 10.1844 7.46465 11.3091 8.29391 12.1384C9.12316 12.9677 10.2479 13.4335 11.4206 13.4335Z" fill="white"/>
                                 </svg>
                         </a>
-                    </li>
+                    </li>          
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <section class="container-xxl">
+            <div>
+                <div class="main-page">
+                    <h1 class="titel-main-page">Discover, collect, and sell <span class="main-gradient">Timeless</span> NFTs</h1>
+                    <p class="text-main-page">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).</p>
+                    <div class="d-flex align-items-center main-button">
+                        <a class="text-decoration-none d-inline-block text-button main-botton-background" href="#"> Explore
+                            <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" width="53" height="17" viewBox="0 0 53 17" fill="none">
+                                <path d="M43.3723 14.101L48.8995 8.57366L43.3723 3.04637L44.4777 0.835449L52.2159 8.57366L44.4777 16.3119L43.3723 14.101Z" fill="white"/>
+                                <line x1="48.8995" y1="8.57372" x2="0.259327" y2="8.57372" stroke="white" stroke-width="2.21092"/>
+                                </svg>
+                         </a>
+                        <h3 class="buttom-main-text ">Create NFT’s</h3>
+                    </div>
+                </div>
+                    <div>
+                    </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            
+
+        </section>
 
     </main>
     <footer>
