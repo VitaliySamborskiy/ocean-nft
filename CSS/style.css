@@ -106,6 +106,16 @@
     url('../fonts/roboto-v30-latin-500.woff') format('woff'), 
 } 
 
+/*Alethia Next*/
+
+@font-face {
+    font-display: swap;
+    font-family: 'Alethia Next';
+    font-weight: 300;
+    src: url('../fonts/aldrich-v21-latin-regular.woff2') format('woff2'),
+    url('../fonts/aldrich-v21-latin-regular.woff') format('woff');   
+}
+
 :root {
     --blue-background-color: #210C3B;
     --white-fonts-color: #FFFFFF;
@@ -126,13 +136,21 @@ body {
     padding: 0;
 }
 
-a {
+a, p {
     color: var(--white-fonts-color);
     font-family: Orbitron;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    color: var(--white-fonts-color);
 }
 
 h1,h2,h3 {
     font-family: Orbitron;
+    padding: 0;
+    margin: 0;
 }
 
 /*header-section*/
@@ -213,14 +231,46 @@ h1,h2,h3 {
 
 .main-button {
     font-size: 19.898px;
-    font-weight: 700;
 }
 
 .main-botton-background {
     padding: 19.9px 32.06px 18.79px 67.43px;
     background: var(--blue-violet-gradient);
     border-radius: 2px;
-    
+    clip-path: polygon(20% 0, 100% 0, 100% 74%, 85% 100%, 0 100%, 0 31%);  
+}
+
+.main-button-border {
+    padding: 2.211px;;
+    clip-path: polygon(20% 0, 100% 0, 100% 74%, 85% 100%, 0 100%, 0 31%); 
+    background: var(--violet-blue-gradient);
+    border-radius: 4px;
+}
+
+.main-page-score {
+    max-width: 479.77px;
+    margin-top: 68.54px;
+}
+
+.main-vertical-line {
+    width: 1.11px; /* Ширина лінії */
+    height:63.01px; /* Висота лінії (може бути відмічена в пікселях або відсотках) */
+    background-color: #FFF; /* Колір лінії */
+    opacity: 26%;
+}
+
+.titel-score {
+    font-size: 39.797px;
+    letter-spacing: 0.221px;
+    line-height: 53.062px;
+    font-family: 'Aldrich';
+}
+
+.text-score {
+    font-size: 17.687px;
+    line-height: 22.109px; 
+    letter-spacing: 0.221px;
+    font-family: 'Alethia Next';
 }
 
 /*desktop-page*/
