@@ -121,6 +121,12 @@
     --white-fonts-color: #FFFFFF;
     --violet-blue-gradient: linear-gradient(272deg, #43A5E3 46.06%, #FF56F6 81.53%);
     --blue-violet-gradient: linear-gradient(90deg, #42A6E3 2.33%, #FF56F6 101.4%);
+    --button-gradient: linear-gradient(90deg, #3BACE2 0%, #7764FC 29%, #B936EE 48%, #FF56F6 70%);
+    --button-border: linear-gradient(90deg, #FFA6FA 0%, #3C79D4 100%);
+    --main-information-table-swiper-fill: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
+    --main-informatipn-table-swiper-border: rgba(255, 255, 255, 0.28);
+    --swiper-botton-border: linear-gradient(90deg, #3c79d4 0%, #858ae2 14%, #ffa6fa 69%);
+    --swiper-botton-fill: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
 }
 
 /*base*/
@@ -136,9 +142,15 @@ body {
     padding: 0;
 }
 
-a, p {
+p {
+    font-family: 'Rajdhani';
+    padding: 0;
+    margin: 0;
+}
+
+a {
     color: var(--white-fonts-color);
-    font-family: Orbitron;
+    font-family: 'Orbitron';
     padding: 0;
     margin: 0;
 }
@@ -148,7 +160,7 @@ a:hover {
 }
 
 h1,h2,h3 {
-    font-family: Orbitron;
+    font-family: 'Orbitron';
     padding: 0;
     margin: 0;
 }
@@ -156,20 +168,26 @@ h1,h2,h3 {
 /*header-section*/
 
 .header-section {
-    margin-top: 42.1px ;
-    max-width: 1373.61px;
+    margin-top: 42px ;
+}
+
+.logo-link {
+    margin-left: 2px;
 }
 
 .header-navigation {
-    gap: 66.33px;
+    margin-left: 227px;
+    gap: 66px;
 }
 
 .menu-navigation {
-    gap: 40.9px;
+    margin-left: 485px;
+    gap: 41px;
+
 }
 
 .link-navigation {
-    font-size: 19.898px;
+    font-size: 20px;
     font-weight: 700;
     font-family: Orbitron;
     opacity: 0.6;
@@ -184,7 +202,7 @@ h1,h2,h3 {
 /*main-page*/
 
 .main-page {
-    margin-top: 116.07px;
+    margin-top: 101px;
     width: 760px;
 }
 
@@ -196,32 +214,32 @@ h1,h2,h3 {
 }
 
 .titel-main-page {
-    font-size: 66.33px;
+    font-size: 66px;
     font-weight: 600;
-    line-height: 137.4%;
+    line-height: 139%;
     font-family: Spartan;
 }
 
 .text-main-page {
     width: 700px;
-    margin-top: 45.86px;
-    font-size: 26.531px;
+    margin-top: 21px;
+    font-size: 27px;
     font-weight: 400;
-    line-height: 44.218px;
+    line-height: 44px;
     font-family: Rajdhani;
 }
 
 .main-arrow  {
-    margin-left: 11.05px;
+    margin-left: 5px;
 }
 
 .main-button {
-   margin-top: 43.11px; 
+   margin-top: 42px; 
 }
 
 .buttom-main-text {
-    margin-left: 37.59px;
-    font-size: 19.898px;
+    margin-left: 35px;
+    font-size: 20px;
     font-weight: 700;
     background: var(--blue-violet-gradient);
     background-clip: text;
@@ -230,47 +248,222 @@ h1,h2,h3 {
 }
 
 .main-button {
-    font-size: 19.898px;
+    font-size: 20px;
 }
 
 .main-botton-background {
-    padding: 19.9px 32.06px 18.79px 67.43px;
-    background: var(--blue-violet-gradient);
-    border-radius: 2px;
-    clip-path: polygon(20% 0, 100% 0, 100% 74%, 85% 100%, 0 100%, 0 31%);  
+    padding: 17px 32px 17px 67px;
+    background: var(--button-gradient);
+    clip-path: polygon(16% 0, 100% 0, 100% 70%, 85% 100%, 0 100%, 0 29%);  
 }
 
 .main-button-border {
-    padding: 2.211px;;
-    clip-path: polygon(20% 0, 100% 0, 100% 74%, 85% 100%, 0 100%, 0 31%); 
-    background: var(--violet-blue-gradient);
+    padding: 2px;
+    clip-path: polygon(16% 0, 100% 0, 100% 70%, 85% 100%, 0 100%, 0 29%); 
+    background: var(--button-border);
     border-radius: 4px;
 }
 
 .main-page-score {
-    max-width: 479.77px;
-    margin-top: 68.54px;
-}
-
-.main-vertical-line {
-    width: 1.11px; /* Ширина лінії */
-    height:63.01px; /* Висота лінії (може бути відмічена в пікселях або відсотках) */
-    background-color: #FFF; /* Колір лінії */
-    opacity: 26%;
+    max-width: 480px;
+    margin-top: 65px;
 }
 
 .titel-score {
-    font-size: 39.797px;
+    font-size: 40px;
     letter-spacing: 0.221px;
-    line-height: 53.062px;
+    line-height: 53px;
     font-family: 'Aldrich';
 }
 
 .text-score {
-    font-size: 17.687px;
-    line-height: 22.109px; 
+    font-size: 15px;
+    line-height: 17px; 
     letter-spacing: 0.221px;
     font-family: 'Alethia Next';
+}
+
+.main-vertical-line {
+    width: 1px; 
+    height:63px; 
+    background-color: #FFF; 
+    opacity: 26%;
+}
+
+.margin-score-1 {
+    margin-left: 15px;
+    padding-left: 1px;
+}
+
+.margin-score-2 {
+    margin-left: 40px;
+}
+
+.margin-score-3 {
+    margin-left: 21px;
+    padding-left: 1px;
+}
+
+.margin-score-4 {
+    margin-left: 46px;
+}
+
+/* main-swiper */
+
+.main-swiper-window {
+    width: 402px;
+    height: 477px;
+    clip-path: polygon(24% 0, 100% 0, 100% 87%, 79% 100%, 0 100%, 0 13%);
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 117px;
+    margin-left: 144px;
+   
+}
+
+/*main-information-table- swiper*/
+
+.information-table {
+    position: absolute;
+    width: 338px;
+    height: 183px;
+    right: 13.18%;
+    top: 567px;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 24%);
+}
+
+.main-information-border {
+    padding: 2px;
+    background: var(--main-informatipn-table-swiper-border);
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 24%);  
+}
+
+.main-information-table-swiper {
+    background: var(--main-information-table-swiper-fill);
+    width: 334px;
+    height: 179px;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 24%);
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    padding-top: 28px;
+    padding-left: 17px; 
+}
+
+.main-information-titel {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    font-family: 'Rajdhani';
+}
+
+.author-info {
+    margin: 0 0 0 4px;
+}
+
+.avtor-name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 210%;
+    font-family: 'Rajdhani';
+    margin-left: 3px;
+}
+
+.verified {
+    margin-left: 5px;
+}
+
+.main-information-wathc {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.7;
+    margin: 2px 0 0 2px;
+}
+
+.timer {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Rajdhani';
+}
+
+.wathc {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.d-hours {
+    margin: 1px 0 0 0;
+}
+
+.d-minutes {
+   margin: 1px 0 0 25px; 
+}
+
+.d-seconds {
+    margin: 1px 0 0 28px;
+}
+
+.p-mins {
+    margin: 0 0 0 18px;
+}
+
+.p-secs {
+    margin: 0 0 0 23px;
+}
+
+.currency-info {
+    padding: 6px 0;
+}
+
+.titel-price {
+    margin: 20px 0 0 5px;
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.name-cryptocurrency {
+    margin-left: 1px;
+    font-family: 'Orbitron';
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.rate-dollar {
+    margin-left: 6px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.wathc-section {
+    position: absolute;
+    top: 37px;
+    left: 198px;
+}
+
+.botton-info {
+    padding: 6px 8px 6px 10px;
+    background: var(--swiper-botton-fill);
+    border-radius: 5px; 
+}
+
+.swiper-button-border {
+    margin: 27px 0 0 50px;
+    padding: 2px;
+    background: var(--swiper-botton-border);
+    border-radius: 5px;
+}
+
+.text-button-info {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Rajdhani';
+}
+
+.magin-arrow {
+    margin-left: 7px;
 }
 
 /*desktop-page*/
@@ -278,6 +471,6 @@ h1,h2,h3 {
 @media (max-width: 1920px) {
     .container-xxl {
         max-width: 1400px;
-        padding: 0;
+        padding: 3px;
     }
 }
