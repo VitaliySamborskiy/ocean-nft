@@ -1,0 +1,17 @@
+/*colors*/
+
+:root {
+    --blue-background-color: #210C3B;
+    --white-fonts-color: #FFFFFF;
+    --violet-blue-gradient: linear-gradient(272deg, #43A5E3 46.06%, #FF56F6 81.53%);
+    --blue-violet-gradient: linear-gradient(90deg, #42A6E3 2.33%, #FF56F6 101.4%);
+    --button-gradient: linear-gradient(90deg, #3BACE2 0%, #7764FC 29%, #B936EE 48%, #FF56F6 70%);
+    --button-border: linear-gradient(90deg, #FFA6FA 0%, #3C79D4 100%);
+    --main-information-table-swiper-fill: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
+    --main-informatipn-table-swiper-border: rgba(255, 255, 255, 0.28);
+    --swiper-botton-border: linear-gradient(90deg, #3c79d4 0%, #858ae2 14%, #ffa6fa 69%);
+    --swiper-botton-fill: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    --burger-menu: #161516;
+    --burger-background:  rgba(0, 0, 0, 0.5);
+    --burger-header: #020202;
+}

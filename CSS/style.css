@@ -1,154 +1,8 @@
-/*fonts*/
+@import url(./fonts.css);
+@import url(../scss/main.css);
+@import url(./colors.css);
 
-/*orbitron*/
 
-@font-face {
-    font-display: swap; 
-    font-family: 'Orbitron';
-    font-weight: 600;
-    src: url('../fonts/orbitron-v31-latin-600.woff2') format('woff2'),
-    url('../fonts/orbitron-v31-latin-600.woff') format('woff'), 
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Orbitron';
-    font-weight: 700;
-    src: url('../fonts/orbitron-v31-latin-700.woff2') format('woff2'),
-    url('../fonts/orbitron-v31-latin-700.woff') format('woff'),    
-}
-
-/* rajdhani */
-
-@font-face {
-    font-display: swap;
-    font-family: 'Rajdhani';
-    font-weight: 400;
-    src: url('../fonts/rajdhani-v15-latin-regular.woff2') format('woff2'),
-    url('../fonts/rajdhani-v15-latin-regular.woff') format('woff'),
-}
-  
-@font-face {
-    font-display: swap;
-    font-family: 'Rajdhani';
-    font-weight: 500;
-    src: url('../fonts/rajdhani-v15-latin-500.woff2') format('woff2'), 
-    url('../fonts/rajdhani-v15-latin-500.woff') format('woff'),
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Rajdhani';
-    font-weight: 600;
-    src: url('../fonts/rajdhani-v15-latin-600.woff2') format('woff2'), 
-    url('../fonts/rajdhani-v15-latin-600.woff') format('woff'),  
-}
-  
-@font-face {
-    font-display: swap; 
-    font-family: 'Rajdhani';
-    font-weight: 700;
-    src: url('../fonts/rajdhani-v15-latin-700.woff2') format('woff2'),
-    url('../fonts/rajdhani-v15-latin-700.woff') format('woff'), 
-}
-
-/* aldrich*/
-
-@font-face {
-    font-display: swap; 
-    font-family: 'Aldrich';
-    font-weight: 400;
-    src: url('../fonts/aldrich-v21-latin-regular.woff2') format('woff2'),
-    url('../fonts/aldrich-v21-latin-regular.woff') format('woff'),
-}
-
-/* inter*/
-
-@font-face {
-    font-display: swap; 
-    font-family: 'Inter';
-    font-weight: 400;
-    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'),
-    url('../fonts/inter-v13-latin-regular.woff') format('woff'),     
-}
- 
-@font-face {
-    font-display: swap; 
-    font-family: 'Inter';
-    font-weight: 500;
-    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'),
-    url('../fonts/inter-v13-latin-500.woff') format('woff'), 
-}
- 
-@font-face {
-    font-display: swap; 
-    font-family: 'Inter';
-    font-weight: 800;
-    src: url('../fonts/inter-v13-latin-800.woff2') format('woff2'), 
-    url('../fonts/inter-v13-latin-800.woff') format('woff'), 
-}
-
-/* roboto */
-
-@font-face {
-    font-display: swap; 
-    font-family: 'Roboto';
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin-regular.woff') format('woff'),    
-}
-
-@font-face {
-    font-display: swap; 
-    font-family: 'Roboto';
-    font-weight: 500;
-    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
-    url('../fonts/roboto-v30-latin-500.woff') format('woff'), 
-} 
-
-/*Alethia Next*/
-
-@font-face {
-    font-display: swap;
-    font-family: 'Alethia Next';
-    font-weight: 300;
-    src: url('../fonts/alethianext-light-webfont.woff2') format('woff2'),
-    url('../fonts/alethianext-light-webfont.woff') format('woff');   
-}
-
-/* lato */
-@font-face {
-    font-display: swap; 
-    font-family: 'Lato';
-    font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url('../fonts/lato-v24-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-   
-  }
-
-  @font-face {
-    font-display: swap; 
-    font-family: 'Lato';
-    font-weight: 700;
-    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'),
-     url('../fonts/lato-v24-latin-700.woff') format('woff'), 
-  }
-
-:root {
-    --blue-background-color: #210C3B;
-    --white-fonts-color: #FFFFFF;
-    --violet-blue-gradient: linear-gradient(272deg, #43A5E3 46.06%, #FF56F6 81.53%);
-    --blue-violet-gradient: linear-gradient(90deg, #42A6E3 2.33%, #FF56F6 101.4%);
-    --button-gradient: linear-gradient(90deg, #3BACE2 0%, #7764FC 29%, #B936EE 48%, #FF56F6 70%);
-    --button-border: linear-gradient(90deg, #FFA6FA 0%, #3C79D4 100%);
-    --main-information-table-swiper-fill: linear-gradient(90deg, rgba(255, 255, 255, 0.10) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
-    --main-informatipn-table-swiper-border: rgba(255, 255, 255, 0.28);
-    --swiper-botton-border: linear-gradient(90deg, #3c79d4 0%, #858ae2 14%, #ffa6fa 69%);
-    --swiper-botton-fill: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
-    --burger-menu: #161516;
-    --burger-background:  rgba(0, 0, 0, 0.5);
-    --burger-header: #020202;
-}
 
 /*base*/
 
@@ -180,7 +34,7 @@ a:hover {
     color: var(--white-fonts-color);
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     font-family: 'Orbitron';
     padding: 0;
     margin: 0;
@@ -189,7 +43,7 @@ h1,h2,h3 {
 /*header-section*/
 
 .header-section {
-    margin-top: 42px ;
+    margin: 42px 0 0 6px;
 }
 
 .logo-link {
@@ -401,12 +255,12 @@ h1,h2,h3 {
     margin-left: 144px;
 }
 
-/*main-information-table- swiper*/
+/*main-information-table-swiper*/
 
 .information-table {
     position: absolute;
     bottom: -21px;
-    right: -10px;
+    right: -5px;
 }
 
 .main-information-border {
@@ -552,6 +406,10 @@ h1,h2,h3 {
 
 .logo-blockchain {
     margin: 0px 158px 0 0;
+}
+
+.logo-bitmex {
+    margin-top: 14px;
 }
 
 /*desktop-page*/

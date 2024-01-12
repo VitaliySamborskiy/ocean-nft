@@ -1,0 +1,135 @@
+/*fonts*/
+
+/*orbitron*/
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Orbitron';
+    font-weight: 600;
+    src: url('../fonts/orbitron-v31-latin-600.woff2') format('woff2'),
+    url('../fonts/orbitron-v31-latin-600.woff') format('woff'), 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    src: url('../fonts/orbitron-v31-latin-700.woff2') format('woff2'),
+    url('../fonts/orbitron-v31-latin-700.woff') format('woff'),    
+}
+
+/* rajdhani */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    src: url('../fonts/rajdhani-v15-latin-regular.woff2') format('woff2'),
+    url('../fonts/rajdhani-v15-latin-regular.woff') format('woff'),
+}
+  
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    src: url('../fonts/rajdhani-v15-latin-500.woff2') format('woff2'), 
+    url('../fonts/rajdhani-v15-latin-500.woff') format('woff'),
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    src: url('../fonts/rajdhani-v15-latin-600.woff2') format('woff2'), 
+    url('../fonts/rajdhani-v15-latin-600.woff') format('woff'),  
+}
+  
+@font-face {
+    font-display: swap; 
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    src: url('../fonts/rajdhani-v15-latin-700.woff2') format('woff2'),
+    url('../fonts/rajdhani-v15-latin-700.woff') format('woff'), 
+}
+
+/* aldrich*/
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Aldrich';
+    font-weight: 400;
+    src: url('../fonts/aldrich-v21-latin-regular.woff2') format('woff2'),
+    url('../fonts/aldrich-v21-latin-regular.woff') format('woff'),
+}
+
+/* inter*/
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'),
+    url('../fonts/inter-v13-latin-regular.woff') format('woff'),     
+}
+ 
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'),
+    url('../fonts/inter-v13-latin-500.woff') format('woff'), 
+}
+ 
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-weight: 800;
+    src: url('../fonts/inter-v13-latin-800.woff2') format('woff2'), 
+    url('../fonts/inter-v13-latin-800.woff') format('woff'), 
+}
+
+/* roboto */
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff'),    
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff'), 
+} 
+
+/*Alethia Next*/
+
+@font-face {
+    font-display: swap;
+    font-family: 'Alethia Next';
+    font-weight: 300;
+    src: url('../fonts/alethianext-light-webfont.woff2') format('woff2'),
+    url('../fonts/alethianext-light-webfont.woff') format('woff');   
+}
+
+/* lato */
+@font-face {
+    font-display: swap; 
+    font-family: 'Lato';
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/lato-v24-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+   
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Lato';
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'),
+     url('../fonts/lato-v24-latin-700.woff') format('woff'), 
+  }
