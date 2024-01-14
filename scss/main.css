@@ -1,119 +1,186 @@
-.swiper-first .swiper-header .swiper-header__content {
+.swiper-first .swiper-header__content {
   margin-top: 387px;
   width: 1380px;
 }
-.swiper-first .swiper-header .swiper-header__title {
+.swiper-first .swiper-header__title {
   margin-left: 7px;
 }
-.swiper-first .swiper-header .swiper-header__link {
+.swiper-first .swiper-header__link {
   font-size: 27px;
   font-weight: 700;
 }
-.swiper-first .swiper-header .swiper-header__arrow {
+.swiper-first .swiper-header__arrow {
   margin: 0 0 5px 5px;
 }
-.swiper-first .swiper-body .swiper-body__content {
+.swiper-first .swiper-body {
+  /*avtor-section*/
+  /*wathc-section*/
+  /*price-section*/
+  /*button-section*/
+}
+.swiper-first .swiper-body__content {
   margin: 43px 0 0 8px;
 }
-.swiper-first .swiper-body .swiper-body_overflow_hidden {
+.swiper-first .swiper-body_overflow_hidden {
   overflow: hidden;
 }
-.swiper-first .swiper-body .swiper-body__info {
+.swiper-first .swiper-body__info {
+  position: relative;
   padding: 34px 0 0 20px;
   width: 436px;
   background: var(--main-information-table-swiper-fill);
   border: var(--main-informatipn-table-swiper-border) 3px solid;
   backdrop-filter: blur(40px);
 }
-.swiper-first .swiper-body .swiper-body__avtor-section {
+.swiper-first .swiper-body__avtor-section {
   margin-left: 5px;
 }
-.swiper-first .swiper-body .swiper-body__avtor-section .swiper-body__avtor-title {
+.swiper-first .swiper-body__avtor-title {
   font-size: 23px;
   font-family: "Rajdhani";
   line-height: 200%;
   font-weight: 700;
 }
-.swiper-first .swiper-body .swiper-body__avtor-section .swiper-body__avtor-img {
+.swiper-first .swiper-body__avtor-img {
   margin: 4px 0 0 0;
 }
-.swiper-first .swiper-body .swiper-body__avtor-section .swiper-body__avtor-name {
+.swiper-first .swiper-body__avtor-name {
   margin-left: 3px;
   font-size: 20px;
   font-weight: 600;
   font-family: "Rajdhani";
 }
-.swiper-first .swiper-body .swiper-body__avtor-section .swiper-body__avtor-verified {
+.swiper-first .swiper-body__avtor-verified {
   margin-left: 8px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section {
-  margin: 11px 0 0 33px;
+.swiper-first .swiper-body__wathc-section {
+  margin-top: 12px;
+  position: absolute;
+  right: 30px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-title {
+.swiper-first .swiper-body__wathc-title {
   padding-left: 6px;
   font-size: 14px;
   font-weight: 500;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface {
-  padding-top: 4px;
+.swiper-first .swiper-body__wathc-clockface {
+  padding-top: 8px;
   height: 33px;
   font-size: 23px;
   font-weight: 600;
   font-family: "Rajdhani";
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface .swiper-body__wathc-hours {
-  margin-left: 5px;
+.swiper-first .swiper-body__wathc-hours {
+  margin-left: 3px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface .swiper-body__wathc-minutes {
-  margin-left: 35px;
+.swiper-first .swiper-body__wathc-minutes {
+  margin-left: 33px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface .swiper-body__wathc-seconds {
-  margin-left: 35px;
+.swiper-first .swiper-body__wathc-seconds {
+  margin-left: 38px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface-text {
+.swiper-first .swiper-body__wathc-clockface-text {
   font-size: 14px;
   font-weight: 600;
   font-family: "Rajdhani";
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface-text .swiper-body__wathc-text-mins {
-  margin-left: 25px;
+.swiper-first .swiper-body__wathc-text-mins {
+  margin-left: 26px;
 }
-.swiper-first .swiper-body .swiper-body__wathc-section .swiper-body__wathc-clockface-text .swiper-body__wathc-text-secs {
-  margin-left: 30px;
+.swiper-first .swiper-body__wathc-text-secs {
+  margin-left: 32px;
 }
-.swiper-first .swiper-body .swiper-body__price-section .swiper-body__price-title {
-  margin: 22px 0 0 8px;
+.swiper-first .swiper-body__price-title {
+  margin: 27px 0 0 8px;
   font-size: 14px;
   font-weight: 600;
   font-family: "Rajdhani";
 }
-.swiper-first .swiper-body .swiper-body__price-section .swiper-body__price-info {
+.swiper-first .swiper-body__price-info {
   padding: 8px 0 30px 0;
 }
-.swiper-first .swiper-body .swiper-body__price-section .swiper-body__price-cryptocurrency {
+.swiper-first .swiper-body__price-cryptocurrency {
   font-size: 13px;
   font-weight: 700;
   font-family: "Orbitron";
 }
-.swiper-first .swiper-body .swiper-body__price-section .swiper-body__price-dollar {
+.swiper-first .swiper-body__price-dollar {
   margin-left: 7px;
   font-size: 14px;
   font-weight: 400;
 }
-.swiper-first .swiper-body .swiper-body__button {
+.swiper-first .swiper-body__button {
   margin: 15px 0 0 70px;
   padding: 2px;
   background: var(--swiper-botton-border);
 }
-.swiper-first .swiper-body .swiper-body__button .swiper-body__button-text {
+.swiper-first .swiper-body__button-text {
   font-size: 23px;
   font-weight: 600;
   font-family: "Rajdhani";
   padding: 9px 11px 7px 13px;
   background: var(--swiper-botton-fill);
 }
-.swiper-first .swiper-body .swiper-body__button .swiper-body__button-arrow {
+.swiper-first .swiper-body__button-arrow {
   margin-left: 7px;
+}
+
+.tabs__container {
+  margin: 206px 0 0 7px;
+  position: relative;
+}
+
+.tabs-header {
+  width: 790px;
+}
+.tabs-header__items {
+  margin-top: 44px;
+  gap: 41px;
+}
+.tabs-header__item {
+  padding-top: 30px;
+  margin-bottom: 38px;
+  width: 370px;
+  height: 105px;
+  border: 3px solid;
+  border-image-source: var(--tabs-item-gradient);
+  border-image-slice: 3;
+  opacity: 0.3;
+  transition: background 0.5s ease, opacity 0.5s ease;
+}
+.tabs-header__item--active {
+  background: var(--swiper-botton-fill);
+  opacity: 1;
+}
+.tabs-header__link {
+  font-size: 20px;
+  margin-left: 620px;
+}
+.tabs-header__arrow {
+  margin-left: 10px;
+}
+
+.tabs-body__conteiner {
+  position: absolute;
+  top: -47px;
+  right: 47px;
+}
+.tabs-body__block {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tabs-body__block--active {
+  display: block;
+  opacity: 1;
+}
+.tabs-body__img {
+  width: 430px;
+  height: 700;
+}
+.tabs-body__active {
+  background: var(--swiper-botton-fill);
+  opacity: 1;
 }
 
 .title {
