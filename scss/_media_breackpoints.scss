@@ -1,0 +1,17 @@
+$containers: (
+    xxl: 1920px,
+    xl: 1440px,
+    md: 1240px,
+    sm: 767px
+);
+
+@mixin respond-below($container) {
+  @if map-has-key($containers, $container) {
+    $container-value: map-get($containers, $container);
+    @media (max-width: $container-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$container}.';
+ }
+}

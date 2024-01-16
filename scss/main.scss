@@ -1,7 +1,14 @@
+@import "./media_breackpoints";
 @import "./blocks/swiper-first";
 @import "./blocks/tabs";
 
 .title {
     font-size: 26px;
     font-weight: 700;
+}
+
+@include respond-below(md) {
+    .title {
+        font-size: 16px;
+    }
 }

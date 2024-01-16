@@ -665,7 +665,9 @@ h1,h2,h3,h4 {
 
 @media (max-width: 767px) {
     .container-sm {
-        max-width: 375px;
+        position: relative;
+        max-width: 90%;
+        min-width: 375px;
         padding: 0 25px;
     }
 

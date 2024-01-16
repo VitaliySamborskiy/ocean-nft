@@ -23,10 +23,11 @@
         &__content {
             margin: 43px 0 0 8px;
         }
-        &_overflow_hidden {
+
+        &__overflow_hidden {
             overflow: hidden;
         }
-        
+      
         &__info {
             position: relative;
             padding: 34px 0 0 20px;
@@ -155,5 +156,283 @@
         &__button-arrow {
             margin-left: 7px;
         }
+
+        /*bottom-button*/
+
+        &__bottom-button {
+            display: none;
+        }
+
+        &__button-border {
+            margin: 40px auto 0;
+        }
+
+        &__bottom-button-text {
+            padding: 9px 17px 12px 28px;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'Orbitron';
+            background: var(--swiper-botton-fill);
+            clip-path: polygon( 17.985% 3.711%,97.904% 3.711%,97.904% 3.711%,98.114% 3.772%,98.313% 3.948%,98.498% 4.231%,98.667% 4.609%,98.818% 5.075%,98.947% 5.617%,99.052% 6.228%,99.13% 6.896%,99.179% 7.612%,99.196% 8.368%,99.196% 69.725%,99.196% 69.725%,99.188% 70.253%,99.164% 70.768%,99.124% 71.266%,99.069% 71.741%,99% 72.191%,98.918% 72.611%,98.823% 72.997%,98.717% 73.345%,98.599% 73.65%,98.472% 73.909%,85.715% 96.374%,85.715% 96.374%,85.661% 96.463%,85.607% 96.543%,85.552% 96.614%,85.496% 96.675%,85.439% 96.727%,85.382% 96.77%,85.324% 96.804%,85.266% 96.828%,85.207% 96.842%,85.148% 96.847%,2.321% 96.847%,2.321% 96.847%,2.111% 96.786%,1.913% 96.609%,1.727% 96.327%,1.558% 95.948%,1.408% 95.483%,1.279% 94.94%,1.173% 94.33%,1.095% 93.662%,1.046% 92.946%,1.029% 92.19%,1.029% 35.13%,1.029% 35.13%,1.038% 34.595%,1.063% 34.075%,1.104% 33.573%,1.159% 33.093%,1.229% 32.64%,1.313% 32.217%,1.409% 31.83%,1.518% 31.482%,1.638% 31.178%,1.768% 30.922%,17.432% 4.16%,17.432% 4.16%,17.484% 4.075%,17.537% 3.999%,17.591% 3.932%,17.646% 3.874%,17.702% 3.824%,17.757% 3.784%,17.814% 3.752%,17.871% 3.729%,17.928% 3.715%,17.985% 3.711% );  
+        }
+
+        &__bottom-button-arrow {
+            margin-left: 5px;
+        }
     }   
+}
+
+@include respond-below(xl) {
+    .swiper-first {
+        .swiper-header {
+            &__content {
+                margin-top: 340px;
+                width: 100%;
+            }
+        }
+        .swiper-body {
+            &__content {
+                width: 1340px;
+            }
+        }
+    }
+}
+
+@include respond-below(md) {
+    .swiper-first {
+        .swiper-header {
+            &__content {
+                margin-top: 190px;
+            }
+
+            &__link {
+                display: none;
+            }
+
+        }
+        .swiper-body {
+            &__content {
+                margin-left: 0;
+                width: 900px;
+            }
+
+            &__img {
+                width: 304px;
+            }
+
+            &__overflow_hidden {
+                width: 688px;
+            }
+
+            &__info {
+                padding: 24px 0 0 21px;
+                width: 304px;
+            }
+    
+            /*avtor-section*/
+    
+            &__avtor-title {
+                font-size: 13px;
+            }
+    
+            &__avtor-img {
+                width: 26px;
+            }
+    
+            &__avtor-name {
+                font-size: 12px;
+            }
+    
+            &__avtor-verified {
+                width: 11px;
+            }
+    
+            /*wathc-section*/
+            
+            &__wathc-section {
+                margin-top: 12px;
+                right: 30px;
+            }
+    
+            &__wathc-title {
+                font-size: 9px;                
+            }
+    
+            &__wathc-clockface {
+                font-size: 14px;           
+            }
+
+            &__wathc-hours {
+                margin-left: 3px;
+            }
+            
+            &__wathc-minutes {
+                margin-left: 24px;
+            }
+    
+            &__wathc-seconds {
+                margin-left: 23px;
+            }
+    
+            &__wathc-clockface-text {
+                font-size: 9px;       
+            }
+
+            &__wathc-text-mins {
+                margin-left: 16px;
+            }
+    
+            &__wathc-text-secs {
+                margin-left: 21px;
+            }
+    
+            /*price-section*/
+    
+            &__price-title {
+                margin: 30px 0 0 8px;
+                font-size: 9px;
+            }
+
+            &__price-img {
+               width: 18px;
+               height: 18px; 
+            }
+    
+            &__price-cryptocurrency {
+                font-size: 7px;
+            }
+    
+            &__price-dollar {
+                font-size: 9px;
+            }
+    
+            /*button-section*/
+    
+            &__button {
+                margin: 15px 0 0 49px;
+                padding: 2px;   
+            }
+    
+            &__button-text {
+                font-size: 14px;
+                padding: 7px 8px 7px 9px;
+            }
+
+            &__button-arrow {
+                margin-left: 9px;
+            }
+
+            &__bottom-button {
+                display: flex;
+            }
+        }
+    }
+}
+
+@include respond-below(sm) {
+    .swiper-first {
+        .swiper-header {
+            &__content {
+                margin-top: 145px;
+            }
+            
+            &__title {
+                margin-left: 0px;
+            }
+        }
+        .swiper-body {
+            &__content {
+                width: 900px;
+                margin-top: 36px;
+            }
+
+            &__overflow_hidden {
+                width: 100%;
+            }
+
+            &__info {
+                padding: 24px 0 0 16px;
+                width: 304px;
+            }
+    
+            /*avtor-section*/
+    
+            &__avtor-title {
+                font-size: 14px;
+            }
+    
+            &__avtor-img {
+                width: 26px;
+                margin-top: 3px;
+            }
+    
+            &__avtor-verified {
+                width: 16px;
+            }
+    
+            /*wathc-section*/
+            
+            &__wathc-section {
+                margin-top: 7px;
+                right: 24px;
+            }
+
+            &__wathc-title {
+                padding-left: 0px;                
+            }
+    
+            &__wathc-clockface {
+                padding-top: 2px;
+                height: 24px;                      
+            }
+
+            &__wathc-hours {
+                margin-left: 0px;
+            }
+            
+            &__wathc-minutes {
+                margin-left: 24px;
+            }
+    
+            &__wathc-seconds {
+                margin-left: 23px;
+            }
+
+            &__wathc-text-mins {
+                margin-left: 17px;
+            }
+    
+            &__wathc-text-secs {
+                margin-left: 18px;
+            }
+    
+            /*price-section*/
+    
+            &__price-title {
+                margin: 20px 0 0 0px;
+                font-size: 9px;
+            }
+
+            &__price-info {
+                padding: 8px 0 20px 0;
+            }
+    
+            /*button-section*/
+    
+            &__button {
+                margin: 13px 0 0 59px;
+                padding: 2px;   
+            }
+    
+            &__button-text {
+                padding: 6px 8px 6px 9px;
+            }
+
+            &__button-arrow {
+                width: 20px;
+                height: 10px;
+                margin-left: 15px;
+            }
+        }
+    }
 }

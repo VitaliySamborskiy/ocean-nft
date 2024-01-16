@@ -59,11 +59,11 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 36,
     loop: true,
     autoplay: {
-      delay: 8000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: '.swiper-header__link',
+      nextEl: '.swiper_clikc',
     },
   }
 );
