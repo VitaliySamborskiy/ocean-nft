@@ -411,7 +411,7 @@
     margin-left: 10px;
   }
   .tabs-body__conteiner {
-    top: 0px;
+    top: -45px;
     right: 0px;
   }
   .tabs-body__img {
@@ -449,7 +449,7 @@
     height: 7;
   }
   .tabs-body__conteiner {
-    top: -20px;
+    top: -50px;
     position: absolute;
   }
   .tabs-body__img {
@@ -460,6 +460,9 @@
   .tabs__container {
     margin: 120px 0 0 0px;
     position: relative;
+  }
+  .tabs-header {
+    margin: 0 auto;
   }
   .tabs-header__container {
     width: 100%;
@@ -476,6 +479,9 @@
     width: 153px;
     height: 42px;
   }
+  .tabs-header__item-magin {
+    margin-bottom: 5px;
+  }
   .tabs-header__link {
     font-size: 8px;
     display: inline-block;
@@ -483,15 +489,107 @@
   .tabs-header__arrow {
     margin-left: 4px;
   }
+  .tabs-body {
+    margin: 0 auto;
+  }
   .tabs-body__conteiner {
     margin: 0 auto;
     position: static;
   }
   .tabs-body__img {
-    min-width: 220px;
-    min-width: 100px;
+    padding-left: 10px;
+    max-width: 197px;
   }
 }
+.swiper-header__content {
+  margin-top: 239px;
+  width: 1380px;
+}
+.swiper-header__title {
+  margin-left: 7px;
+}
+.swiper-header__link {
+  font-size: 27px;
+}
+.swiper-header__arrow {
+  margin: 0 0 5px 5px;
+}
+
+.swiper-body__block {
+  margin: 43px 0 0 8px;
+}
+.swiper-body__item {
+  position: relative;
+  background: var(--main-information-table-swiper-fill);
+  border: var(--main-informatipn-table-swiper-border) 3px solid;
+  backdrop-filter: blur(40px);
+}
+.swiper-body__img-background {
+  position: absolute;
+  z-index: -1;
+}
+.swiper-body__info {
+  width: 438px;
+}
+.swiper-body__img-artist {
+  display: flex;
+  margin: 102px auto 0;
+  width: 163px;
+  border: 4px solid var(--swiper-seconds-img-artist);
+  border-radius: 190px;
+}
+.swiper-body__title {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Rajdhani";
+}
+.swiper-body__artist {
+  margin: 2px 0 0 167px;
+}
+.swiper-body__artist-teg {
+  font-size: 20px;
+  font-weight: 400;
+}
+.swiper-body__artist-verified {
+  margin-left: 5px;
+}
+.swiper-body__statistic {
+  margin-top: 25px;
+}
+.swiper-body__numer {
+  font-size: 32px;
+  font-weight: 600;
+}
+.swiper-body__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.3;
+}
+.swiper-body__folowers {
+  margin-left: 38px;
+}
+.swiper-body__following {
+  margin-left: 65px;
+}
+.swiper-body__artworks {
+  margin-left: 65px;
+}
+.swiper-body__button-section {
+  margin-top: 51px;
+  padding-bottom: 34px;
+}
+.swiper-body__button {
+  padding: 11px 92px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Rajdhani";
+  background: var(--swiper-botton-fill);
+  border: solid 2px;
+  border-image-source: var(--swiper-botton-border);
+  border-image-slice: 1;
+}
+
 .title {
   font-size: 26px;
   font-weight: 700;

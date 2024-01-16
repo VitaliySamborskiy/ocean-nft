@@ -14,5 +14,6 @@
     --burger-menu: #161516;
     --burger-background:  rgba(0, 0, 0, 0.5);
     --burger-header: #020202;
-    --tabs-item-gradient: linear-gradient(90deg, rgba(60,121,212,1) 0%, rgba(255,166,250,1) 50%);; 
+    --tabs-item-gradient: linear-gradient(90deg, rgba(60,121,212,1) 0%, rgba(255,166,250,1) 50%);
+    --swiper-seconds-img-artist: #fff;
 }

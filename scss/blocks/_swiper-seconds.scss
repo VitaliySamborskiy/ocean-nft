@@ -1,0 +1,107 @@
+.swiper-header{
+    &__content {
+        margin-top: 239px;
+        width: 1380px;    
+    }
+
+    &__title {
+        margin-left: 7px;
+    }
+
+    &__link {
+        font-size: 27px;
+    }
+
+    &__arrow {
+        margin: 0 0 5px 5px;
+    }
+}
+
+.swiper-body {
+    &__block {
+        margin: 43px 0 0 8px;
+    }
+    
+    &__item {
+        position: relative;
+        background: var(--main-information-table-swiper-fill);
+        border: var(--main-informatipn-table-swiper-border) 3px solid;
+        backdrop-filter: blur(40px);
+    }
+    &__img-background {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__info {
+        width: 438px;
+    }
+
+    &__img-artist {
+        display: flex;
+        margin: 102px auto 0;
+        width: 163px;
+        border: 4px solid var(--swiper-seconds-img-artist);
+        border-radius: 190px;
+    }
+
+    &__title {
+        margin-top: 8px;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Rajdhani';
+    }
+
+    &__artist {
+        margin: 2px 0 0 167px;
+    }
+
+    &__artist-teg {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__artist-verified {
+        margin-left: 5px;
+    }
+
+    &__statistic {
+        margin-top: 25px;
+    }
+
+    &__numer {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 0.3;
+    }
+    &__folowers {
+        margin-left: 38px;
+    }
+    &__following {
+        margin-left: 65px;
+    }
+    &__artworks {
+        margin-left: 65px;
+    }
+    
+    &__button-section {
+        margin-top: 51px;
+        padding-bottom: 34px;
+    }
+
+    &__button {
+        padding: 11px 92px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Rajdhani';
+        background: var(--swiper-botton-fill);
+        border: solid 2px;
+        border-image-source: var(--swiper-botton-border);
+        border-image-slice: 1;
+    }
+}
