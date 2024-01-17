@@ -130,13 +130,16 @@
 }
 .swiper-first .swiper-body__button-border {
   margin: 40px auto 0;
+  padding: 5px 2px 11px 2px;
+  background: var(--swiper-botton-fill);
+  clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
 }
 .swiper-first .swiper-body__bottom-button-text {
   padding: 9px 17px 12px 28px;
   font-size: 12px;
   font-weight: 700;
   font-family: "Orbitron";
-  background: var(--swiper-botton-fill);
+  background: var(--blue-background-color);
   clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
 }
 .swiper-first .swiper-body__bottom-button-arrow {
@@ -327,6 +330,9 @@
     height: 10px;
     margin-left: 15px;
   }
+  .swiper-first .swiper-body__button-border {
+    margin: 37px auto 0;
+  }
 }
 .tabs__container {
   margin: 206px 0 0 7px;
@@ -458,7 +464,7 @@
 }
 @media (max-width: 767px) {
   .tabs__container {
-    margin: 120px 0 0 0px;
+    margin: 107px 0 0 0px;
     position: relative;
   }
   .tabs-header {
@@ -501,85 +507,91 @@
     max-width: 197px;
   }
 }
-.swiper-header__content {
+.swiper-seconds .swiper-header__content {
   margin-top: 239px;
   width: 1380px;
 }
-.swiper-header__title {
+.swiper-seconds .swiper-header__title {
   margin-left: 7px;
 }
-.swiper-header__link {
+.swiper-seconds .swiper-header__link {
   font-size: 27px;
 }
-.swiper-header__arrow {
+.swiper-seconds .swiper-header__arrow {
   margin: 0 0 5px 5px;
 }
-
-.swiper-body__block {
+.swiper-seconds .swiper-body {
+  /*bottom-button*/
+}
+.swiper-seconds .swiper-body__block-overflow_hidden {
+  overflow: hidden;
+}
+.swiper-seconds .swiper-body__block {
   margin: 43px 0 0 8px;
 }
-.swiper-body__item {
+.swiper-seconds .swiper-body__item {
+  width: 438px;
   position: relative;
   background: var(--main-information-table-swiper-fill);
   border: var(--main-informatipn-table-swiper-border) 3px solid;
   backdrop-filter: blur(40px);
 }
-.swiper-body__img-background {
+.swiper-seconds .swiper-body__img-background {
   position: absolute;
   z-index: -1;
 }
-.swiper-body__info {
-  width: 438px;
+.swiper-seconds .swiper-body__info {
+  width: 100%;
 }
-.swiper-body__img-artist {
+.swiper-seconds .swiper-body__img-artist {
   display: flex;
   margin: 102px auto 0;
   width: 163px;
   border: 4px solid var(--swiper-seconds-img-artist);
   border-radius: 190px;
 }
-.swiper-body__title {
+.swiper-seconds .swiper-body__title {
   margin-top: 8px;
   font-size: 24px;
   font-weight: 500;
   font-family: "Rajdhani";
 }
-.swiper-body__artist {
+.swiper-seconds .swiper-body__artist {
   margin: 2px 0 0 167px;
 }
-.swiper-body__artist-teg {
+.swiper-seconds .swiper-body__artist-teg {
   font-size: 20px;
   font-weight: 400;
 }
-.swiper-body__artist-verified {
+.swiper-seconds .swiper-body__artist-verified {
   margin-left: 5px;
 }
-.swiper-body__statistic {
+.swiper-seconds .swiper-body__statistic {
   margin-top: 25px;
 }
-.swiper-body__numer {
+.swiper-seconds .swiper-body__numer {
   font-size: 32px;
   font-weight: 600;
 }
-.swiper-body__name {
+.swiper-seconds .swiper-body__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 0.3;
 }
-.swiper-body__folowers {
+.swiper-seconds .swiper-body__folowers {
   margin-left: 38px;
 }
-.swiper-body__following {
+.swiper-seconds .swiper-body__following {
   margin-left: 65px;
 }
-.swiper-body__artworks {
+.swiper-seconds .swiper-body__artworks {
   margin-left: 65px;
 }
-.swiper-body__button-section {
+.swiper-seconds .swiper-body__button-section {
   margin-top: 51px;
   padding-bottom: 34px;
 }
-.swiper-body__button {
+.swiper-seconds .swiper-body__button {
   padding: 11px 92px;
   font-size: 20px;
   font-weight: 600;
@@ -589,7 +601,143 @@
   border-image-source: var(--swiper-botton-border);
   border-image-slice: 1;
 }
+.swiper-seconds .swiper-body__bottom-button {
+  display: none;
+}
+.swiper-seconds .swiper-body__button-border {
+  margin: 40px auto 0;
+  padding: 5px 2px 11px 2px;
+  background: var(--swiper-botton-fill);
+  clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
+}
+.swiper-seconds .swiper-body__bottom-button-text {
+  padding: 9px 17px 12px 28px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Orbitron";
+  background: var(--blue-background-color);
+  clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
+}
+.swiper-seconds .swiper-body__bottom-button-arrow {
+  margin-left: 5px;
+}
 
+@media (max-width: 1440px) {
+  .swiper-seconds .swiper-header__content {
+    margin-top: 192px;
+    width: 100%;
+  }
+  .swiper-seconds .swiper-body__block {
+    width: 1385px;
+  }
+}
+@media (max-width: 1240px) {
+  .swiper-seconds .swiper-header__content {
+    margin-top: 110px;
+  }
+  .swiper-seconds .swiper-header__link {
+    display: none;
+  }
+  .swiper-seconds .swiper-header__title {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .swiper-seconds .swiper-body__block {
+    margin-left: 0;
+    width: 900px;
+  }
+  .swiper-seconds .swiper-body__img-background {
+    width: 100%;
+  }
+  .swiper-seconds .swiper-body__item {
+    width: 303px;
+  }
+  .swiper-seconds .swiper-body__img-artist {
+    margin: 70px auto 0;
+    width: 112px;
+    border: 2px solid var(--swiper-seconds-img-artist);
+  }
+  .swiper-seconds .swiper-body__title {
+    margin-top: 11px;
+    font-size: 17px;
+  }
+  .swiper-seconds .swiper-body__artist {
+    margin: 2px 0 0 115px;
+  }
+  .swiper-seconds .swiper-body__artist-teg {
+    font-size: 14px;
+  }
+  .swiper-seconds .swiper-body__artist-verified {
+    width: 10px;
+  }
+  .swiper-seconds .swiper-body__statistic {
+    margin-top: 10px;
+  }
+  .swiper-seconds .swiper-body__numer {
+    font-size: 22px;
+  }
+  .swiper-seconds .swiper-body__name {
+    font-size: 14px;
+  }
+  .swiper-seconds .swiper-body__folowers {
+    margin-left: 33px;
+  }
+  .swiper-seconds .swiper-body__following {
+    margin-left: 40px;
+  }
+  .swiper-seconds .swiper-body__artworks {
+    margin-left: 40px;
+  }
+  .swiper-seconds .swiper-body__button-section {
+    margin-top: 30px;
+    padding-bottom: 25px;
+  }
+  .swiper-seconds .swiper-body__button {
+    padding: 8px 51px;
+    font-size: 14px;
+  }
+  .swiper-seconds .swiper-body__bottom-button {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .swiper-seconds .swiper-body__block {
+    margin: 32px 0 0 0px;
+  }
+  .swiper-seconds .swiper-body__title {
+    margin-top: 8px;
+  }
+  .swiper-seconds .swiper-body__artist {
+    margin: 1px 0 0 115px;
+  }
+  .swiper-seconds .swiper-body__statistic {
+    margin-top: 11px;
+  }
+  .swiper-seconds .swiper-body__numer {
+    line-height: 200%;
+  }
+  .swiper-seconds .swiper-body__name {
+    font-size: 14px;
+  }
+  .swiper-seconds .swiper-body__folowers {
+    margin-left: 26px;
+  }
+  .swiper-seconds .swiper-body__following {
+    margin-left: 45px;
+  }
+  .swiper-seconds .swiper-body__artworks {
+    margin-left: 45px;
+  }
+  .swiper-seconds .swiper-body__button-section {
+    margin-top: 30px;
+  }
+  .swiper-seconds .swiper-body__button {
+    padding: 7px 64px;
+  }
+  .swiper-seconds .swiper-body__button-border {
+    margin: 40px auto 0;
+  }
+}
 .title {
   font-size: 26px;
   font-weight: 700;
