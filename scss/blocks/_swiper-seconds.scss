@@ -30,8 +30,8 @@
         &__item {
             width: 438px;
             position: relative;
-            background: var(--main-information-table-swiper-fill);
-            border: var(--main-informatipn-table-swiper-border) 3px solid;
+            background: $mainInfoTableFill;
+            border: 3px solid $MainInfoBorder;
             backdrop-filter: blur(40px);
         }
 
@@ -48,7 +48,7 @@
             display: flex;
             margin: 102px auto 0;
             width: 163px;
-            border: 4px solid var(--swiper-seconds-img-artist);
+            border: 4px solid $sellersText;
             border-radius: 190px;
         }
     
@@ -108,9 +108,9 @@
             font-size: 20px;
             font-weight: 600;
             font-family: 'Rajdhani';
-            background: var(--swiper-botton-fill);
+            background: $swiperBottonFill;
             border: solid 2px;
-            border-image-source: var(--swiper-botton-border);
+            border-image-source: $tabsItemGradient;
             border-image-slice: 1;
         }
     }   
@@ -165,7 +165,7 @@
             &__img-artist {
                 margin: 70px auto 0;
                 width: 112px;
-                border: 2px solid var(--swiper-seconds-img-artist);
+                border: 2px solid $sellersText;
             }
         
             &__title {

@@ -23,14 +23,14 @@
         width: 370px;
         height: 105px;
         border: 3px solid;
-        border-image-source: var(--tabs-item-gradient);
+        border-image-source: $tabsItemGradient;
         border-image-slice: 3;
         opacity: 0.3;
         transition: background 0.5s ease, opacity 0.5s ease;
     }
 
     &__item--active {
-        background: var(--swiper-botton-fill);
+        background: $swiperBottonFill;
         opacity: 1;
     }
 
@@ -67,7 +67,7 @@
     }
 
     &__active {
-        background: var(--swiper-botton-fill);
+        background: $swiperBottonFill;
         opacity: 1;
     }
 }

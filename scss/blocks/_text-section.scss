@@ -1,0 +1,120 @@
+.text {
+    &__container {
+        position: relative;
+    }
+    &__img-section{
+        margin-top: 155px;
+    }
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 6/1.75;
+    }
+
+    &__info {
+        position: absolute;
+        right: 39px;
+        top: -333px;
+        width: 577px;
+        padding: 58px 0 46px 71px;
+        background: $mainInfoTableFill;
+        border: 3px solid $MainInfoBorder;
+        backdrop-filter: blur(73px);
+    }
+
+    &__title {
+        font-size: 45px;
+        font-weight: 800;
+        font-family: 'Inter';
+    }
+
+    &__text {
+        margin: 23px 0 0 3px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Inter';
+        line-height: 177%;
+        width: 458px;
+    }
+
+    &__link-section {
+        margin-top: 45px;
+    }
+
+    &_link {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Inter';
+    }
+
+    &__play-svg {
+        margin: 0 4px 0 43px;
+    }
+}
+
+
+@include respond-below(xl) {
+    .text{
+        &__info {
+            right: 39px;
+            top: -330px;
+        }
+
+        &__img {
+            aspect-ratio: 6/2;
+        }
+    }
+}
+
+@include respond-below(md) {
+    .text {
+        &__img-section{
+            margin-top: 108px;
+        }
+    
+        &__info {
+            right: 10px;
+            top: -230px;
+            width: 335px;
+            padding: 34px 0 25px 38px;
+            border: 2px solid $MainInfoBorder;
+        }
+    
+        &__title {
+            font-size: 26px;
+        }
+    
+        &__text {
+            margin: 13px 0 0 0;
+            font-size: 12px;
+            width: 266px;
+        }
+    
+        &__link-section {
+            margin-top: 18px;
+        }
+    
+        &_link {
+            font-size: 10px;
+        }
+    
+        &__play-svg {
+            margin: 0 4px 5px 25px;
+            width: 7px;
+            height: 10px;
+        }
+    }
+}
+
+@include respond-below(sm) {
+    .text {
+        &__img {
+            aspect-ratio: 6/4.6;
+        }
+    
+        &__info {
+            right: 22px;
+            top: -175px;
+        }
+    }
+}
