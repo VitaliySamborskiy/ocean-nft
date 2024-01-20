@@ -1,42 +1,6 @@
-@import url(./fonts.css);
 @import url(../scss/main.css);
 @import url(./colors.css);
 
-/*base*/
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--blue-background-color);
-    color: var(--white-fonts-color);
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-family: 'Rajdhani';
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: var(--white-fonts-color);
-    font-family: 'Orbitron';
-    padding: 0;
-    margin: 0;
-}
-
-a:hover {
-    color: var(--white-fonts-color);
-}
-
-h1,h2,h3,h4 {
-    font-family: 'Orbitron';
-    padding: 0;
-    margin: 0;
-}
 
 /*header-section*/
 

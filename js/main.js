@@ -89,3 +89,12 @@ document.querySelectorAll('.tabs-header__item').forEach((item) =>
 );
 
 document.querySelector('.tabs-header__item').click();
+
+/*sellers*/
+
+function toggleClass() {
+    const targetElement = document.querySelector('.sellers-body__element_click');
+    const currentClass = targetElement.classList.contains('sellers-body__active') ? 'sellers-body__active' : 'sellers-body__overflow-hidden';
+    targetElement.classList.remove(currentClass);
+    targetElement.classList.add(currentClass === 'sellers-body__active' ? 'sellers-body__overflow-hidden' : 'sellers-body__active');
+};

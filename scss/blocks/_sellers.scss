@@ -1,0 +1,305 @@
+.sellers {
+    .sellers-header {
+        &__title-container {
+            margin-top: 156px;
+            padding-left: 20px; 
+        }
+
+        &__dropdown-link {
+            margin-left: 8px;      
+        }
+
+        &__dropdown {
+            font-size: 27px;
+            font-weight: 700;
+            color: $sellersSelectColor;
+        }
+
+        &__dropdown-value {
+            color: $sellersText;
+            font-size: 18px;
+            font-weight: 400;
+            background: $BurgerMenu;
+        }
+
+        &__text { 
+            margin: 23px auto 0;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            width: 485px;
+            line-height: 140%;
+        }
+    }
+    .sellers-body {
+        &__overflow-hidden{
+            overflow: hidden;
+            height: 656px;
+            animation: fade 0.5s ease-in-out;            
+        }
+
+        &__active {
+            height: 100%;
+            animation: fade 0.5s ease-in-out;
+        }
+
+        &__content {
+            margin: 55px 0 0 5px;
+            grid-template-columns: repeat(auto-fill, minmax( 390px, 1fr));
+            column-gap: 35px;
+            row-gap: 32px;
+        }
+
+        &__item {
+            width: 100%;
+            padding: 26px 20px 24px 30px;
+            border-radius: 29px;
+            border: 3px solid $MainInfoBorder;
+            backdrop-filter: blur(38px);
+        }
+
+        &__number {
+            font-size: 19px;
+            font-weight: 500;
+            font-family: 'Roboto';
+        }
+
+        &__img {
+            margin-left: 14px;
+        }
+
+        &__info {
+            margin-left: 14px;
+        }
+
+        &__title-name {
+            margin: 1px 0 7px 0;
+            font-size: 19px;
+            font-weight: 500;
+            font-family: 'Roboto';
+        }
+        
+        &__score-cryptocurrency {
+            margin-left: 4px;
+            color: $sellersText;
+            font-family: 'Roboto';
+            font-size: 14px;
+        }
+
+        &__score {
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Roboto';
+            margin: 15px 0 0 0px;
+            padding: 5px 18px 6px 18px;
+            border-radius: 18px;
+        }
+
+        &__botton-section {
+            padding-left: 16px;
+            margin-top: 58px;
+        }
+
+        &__botton {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Rajdhani';
+            padding: 9px 75px 11px 80px;
+            background: $swiperBottonFill;
+            border: 2px solid;
+            border-image-source: $tabsItemGradient;
+            border-image-slice: 1;
+            box-shadow: 0px 5px 117px 0px $sellersSelectColor;
+        }
+    }
+    .green {
+        color: $sellersScoreTextGreen;
+        border: 1px solid $sellersScoreBorderGreen;
+        background: $sellersScoreFillGreen;
+    }
+    .red {
+        color: $sellersScoreTextRed;
+        border: 1px solid $sellersScoreBorderRed;
+        background: $sellersScoreFillRed;
+    }
+}
+/*
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}*/
+
+@include respond-below(xl) {
+    .sellers {
+        .sellers-body {
+            &__overflow-hidden{
+                height: 655px;
+            }
+
+            &__content {
+                grid-template-columns: repeat(2, minmax( 360px, 1fr));
+            }
+
+            &__item {
+                padding: 26px 20px 24px 30px;
+                border-radius: 29px;
+            }
+        }
+    }
+}
+
+@include respond-below(md) {
+    .sellers {
+        .sellers-header {
+            &__title-container {
+                margin-top: 108px; 
+            }
+    
+            &__dropdown-link {
+                margin-left: 2px;      
+            }
+    
+            &__dropdown {
+                font-size: 19px;
+            }
+
+            &__dropdown-value {
+                font-size: 14px;
+            }
+
+            &__text { 
+                margin: 17px auto 0;
+                font-size: 14px;
+                width: 325px;
+            }
+        }
+        .sellers-body {
+            &__overflow-hidden{
+                height: 495px;             
+            }
+    
+            &__content {
+                margin: 37px 0 0 0;
+                grid-template-columns: repeat(2, minmax( 316px, 1fr));
+                column-gap: 10px;
+                row-gap: 25px;
+            }
+    
+            &__item {
+                padding: 20px 14px 19px 21px;
+                border-radius: 21px;
+            }
+    
+            &__number {
+                font-size: 14px;
+            }
+    
+            &__img {
+                margin-left: 12px;
+                width: 51px;
+            }
+    
+            &__info {
+                margin-left: 10px;
+            }
+    
+            &__title-name {
+                margin: 1px 0 12px 0;
+                font-size: 14px;
+            }
+            
+            &__score-cryptocurrency {
+                margin-left: 3px;
+                font-family: 'Roboto';
+                font-size: 10px;
+            }
+            &__score {
+                font-size: 11px;
+                margin: 15px 0 0 0px;
+                padding: 4px 13px 4px 12px;
+                border-radius: 18px;
+            }
+    
+            &__botton-section {
+                display: none !important;
+            }
+        }
+    }
+    
+}
+
+@include respond-below(sm) {
+    .sellers {
+        .sellers-header {
+            &__title-container {
+                margin: 105px 13px 0 0; 
+            }
+
+            &__title {
+                font-size: 19px;
+            }
+
+            &__text { 
+                margin: 17px auto 0;
+                font-size: 14px;
+                width: 285px;
+            }
+        }
+        .sellers-body {
+            &__overflow-hidden{
+                height: 460px;             
+            }
+    
+            &__content {
+                margin: 27px 0 0 5px;
+                grid-template-columns: repeat(1, minmax( 317px, 1fr));
+                row-gap: 29px;
+            }
+    
+            &__item {
+                padding: 16px 14px 15px 21px;
+                border-radius: 18px;
+                border: 2px solid $MainInfoBorder;
+            }
+    
+            &__number {
+                font-size: 14px;
+            }
+    
+            &__info {
+                margin-left: 10px;
+            }
+    
+            &__title-name {
+                margin: 1px 0 12px 0;
+                font-size: 14px;
+            }
+            
+            &__score-cryptocurrency {
+                margin-left: 3px;
+                font-family: 'Roboto';
+                font-size: 10px;
+            }
+            &__score {
+                font-size: 11px;
+                margin: 10px 0 0 0px;
+                padding: 4px 14px 5px 14px;
+                border-radius: 18px;
+            }
+    
+            &__botton-section {
+                display: none !important;
+            }
+
+            &__botton-mobile {
+                margin-top: 30px;
+            }
+        }
+    }
+}
