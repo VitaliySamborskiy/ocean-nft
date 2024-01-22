@@ -18,6 +18,7 @@
         width: 577px;
         padding: 58px 0 46px 71px;
         background: $mainInfoTableFill;
+        border-radius: 3px;
         border: 3px solid $MainInfoBorder;
         backdrop-filter: blur(73px);
     }
@@ -109,7 +110,7 @@
 @include respond-below(sm) {
     .text {
         &__img {
-            aspect-ratio: 6/4.6;
+            aspect-ratio: 6/3;
         }
     
         &__info {

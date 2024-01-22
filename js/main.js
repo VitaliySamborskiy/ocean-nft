@@ -1,7 +1,7 @@
 /* wathc */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const endDate = new Date('2024-01-19T23:59:59').getTime();
+    const endDate = new Date('2024-01-25T23:59:59').getTime();
     const timerInterval = setInterval(updateTimers, 1000);
 
     function updateTimers() {

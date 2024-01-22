@@ -1,11 +1,14 @@
 @import "./colors";
 @import "./fonts";
 @import "./media_breackpoints";
+@import "./blocks/header";
+@import "./blocks/burger-menu";
 @import "./blocks/swiper-first";
 @import "./blocks/tabs";
 @import "./blocks/swiper-seconds";
 @import "./blocks/sellers";
 @import "./blocks/text-section";
+@import "./blocks/subscribe-section";
 /*base*/
 
 * {
@@ -37,6 +40,10 @@ select:active {
 
 select:focus {
     border: 0;
+}
+
+input {
+    border: none;
 }
 
 option {

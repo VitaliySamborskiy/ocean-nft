@@ -226,8 +226,13 @@
 @include respond-below(sm) {
     .swiper-seconds {
         .swiper-body {
+            &__block-overflow_hidden{
+                width: 108%;
+            }
+
             &__block {
                 margin: 32px 0 0 0px;
+                width: 960px;
             }
         
             &__title {

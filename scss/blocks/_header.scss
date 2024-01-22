@@ -1,0 +1,83 @@
+.header {
+    &__section {
+        margin: 42px 0 0 6px;
+    }
+
+    &__logo {
+        margin-left: 2px;
+    }
+
+    &__items {
+        margin-left: 229px;
+        gap: 66px;
+    }
+
+    &__item {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Orbitron';
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+
+    &__items-svg {
+        margin-left: 485px;
+        gap: 41px;
+    }
+
+    &__item:hover {
+        opacity: 1;
+    }
+}
+
+@include respond-below(xl) {
+    .header {
+        &__section {
+            justify-content: space-between;
+        }
+    
+        &__logo {
+            margin-left: 0px;
+        }
+
+        &__items {
+            margin-left: 0px;
+        }
+    
+        &__items-svg {
+            margin-left: 0px;
+            gap: 40px;
+        }
+    }
+}
+
+@include respond-below(md) {
+    .header { 
+        &__section {
+            width: 660px;
+        }
+
+        &.header__item, .header__items, .header__items-svg {
+            display: none;
+        }
+    }
+
+    .nav,
+    .header-link-list,
+    .header-navigation
+     {
+        display: none;
+    }
+}
+
+@include respond-below(sm) {
+    .header{
+        &__section {
+            width: 90%;
+        }
+
+        &__mobile-logo {
+            width: 112px;
+        }
+    }
+}

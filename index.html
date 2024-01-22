@@ -11,23 +11,23 @@
 </head>
 <body>
     <header>
-        <div class="container-xxl container-xl container-md container-sm">
-            <nav class=" header-section align-items-center d-flex adaptive">
-                <a class="text-decoration-none header-nav list-unstyled logo-link" href="#">
-                    <img class="img-fluid mobile-logo" src="./img/logo.png" alt="Logo Ocean NFT">
+        <div class="header container-xxl container-xl container-md container-sm">
+            <nav class="header__section d-flex align-items-center">
+                <a class="header__logo text-decoration-none header-nav list-unstyled" href="#">
+                    <img class="header__mobile-logo img-fluid" src="./img/logo.png" alt="Logo Ocean NFT">
                 </a>
-                <ul class="nav header-link-list header-navigation">
+                <ul class="header__items nav header-link-list">
                     <li>
-                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Market</a>
+                        <a class="header__item text-decoration-none header-nav list-unstyled" href="#">Market</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Features</a>
+                        <a class="header__item text-decoration-none header-nav list-unstyled" href="#">Features</a>
                     </li>
                     <li>
-                        <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Community</a>
+                        <a class="header__item text-decoration-none header-nav list-unstyled" href="#">Community</a>
                     </li>
                 </ul>
-                <ul class="nav header-link-list menu-navigation">
+                <ul class="header__items-svg nav header-link-list">
                     <li>
                         <a class="text-decoration-none header-nav list-unstyled" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -51,39 +51,41 @@
                     </li>
                 </ul>
                 <div class="burger-menu">
-                    <ul class="nav header-link-list header-navigation" ><li class="burger-backgroaund"></li></ul>
-                    <ul class="nav header-link-list header-navigation">
-                        <li class="burger-menu-logo">
-                        <a class="text-decoration-none header-nav list-unstyled logo-link logo-burger-link" href="#">
-                            <img class="img-fluid burger-logo" src="./img/logo.png" alt="Logo Ocean NFT">
+                    <ul class="burger-menu__body nav header-link-list  header-navigation" >
+                        <li class="burger-menu__backgroaund burger-backgroaund"></li>
+                    </ul>
+                    <ul class="burger-menu__body-backgroaund nav header-link-list header-navigation">
+                        <li class="burger-menu__header burger-menu-logo">
+                        <a href="#">
+                            <img class="burger-menu__logo img-fluid burger-logo" src="./img/logo.png" alt="Logo Ocean NFT">
                         </a>
                     </li>
-                    <ul class="header-link-list list-unstyled burger-menu-style d-grid">
+                    <ul class="burger-menu__items header-link-list list-unstyled burger-menu-style d-grid">
                         
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                         <li>
-                            <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Market</a>
+                            <a class="burger-menu__item text-decoration-none header-nav list-unstyled link-navigation" href="#">Market</a>
                         </li>
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                         <li>
-                            <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Features</a>
+                            <a class="burger-menu__item text-decoration-none header-nav list-unstyled link-navigation" href="#">Features</a>
                         </li>
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                         <li>
-                            <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Community</a>
+                            <a class="burger-menu__item text-decoration-none header-nav list-unstyled link-navigation" href="#">Community</a>
                         </li>
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                         <li>
-                            <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Basket</a>
+                            <a class="burger-menu__item text-decoration-none header-nav list-unstyled link-navigation" href="#">Basket</a>
                         </li>
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                         <li>
-                            <a class="text-decoration-none header-nav list-unstyled link-navigation" href="#">Account</a>
+                            <a class="burger-menu__item text-decoration-none header-nav list-unstyled link-navigation" href="#">Account</a>
                         </li>
-                        <li class="horizontal-line"></li>
+                        <li class="burger-menu__horizontal-line"></li>
                     </ul>
                 </ul>
-                    <div class="burger-icon">
+                    <div class="burger-menu__icon d-flex flex-column justify-content-between">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -1079,8 +1081,27 @@
                         <a class="text_link text-decoration-none" href="#">
                             <svg class="text__play-svg" xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.80572 0.863085C0.689439 0.777549 0.535291 0.764389 0.406388 0.830186C0.277868 0.895983 0.196777 1.02951 0.196777 1.17543V18.2052C0.196777 18.3512 0.277868 18.4847 0.406388 18.5505C0.460703 18.5784 0.520374 18.5923 0.579279 18.5923C0.659222 18.5923 0.738782 18.5671 0.80572 18.5176L12.2808 10.0027C12.3791 9.92953 12.4368 9.81341 12.4368 9.69034C12.4368 9.56726 12.3791 9.45114 12.2808 9.37799L0.80572 0.863085Z" fill="white"/>
-                                </svg> Watch video
+                            </svg> Watch video
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe container-xxl container-xl container-md container-sm">
+            <div class="subscribe__content d-flex">
+                <div class="subscribe__img-container d-flex justify-content-center">
+                    <img class="subscribe__img" src="./img/subscribe/img.png" alt="subscribe-image">
+                </div>
+                <div class="subscribe__info">
+                    <h2 class="subscribe__title">Subscribe to us</h2>
+                    <p class="subscribe__text">Specially developed to help restore a more youthful appearance with improved radiance and bounce.</p>
+                    <div class="subscribe__email-form ">
+                        <form  class="align-items-center" action="email-form">
+                            <input class="subscribe__input" type="text" name="email" placeholder="Your work email address">
+                            <div class="subscribe__button-border d-inline-block">
+                                <button class="subscribe__button" type="submit">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
