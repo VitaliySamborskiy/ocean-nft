@@ -1,19 +1,6 @@
 @import url(../scss/main.css);
 @import url(./colors.css);
 
-
-.burger-menu.active .burger-icon span:nth-child(1) {
-    transform: rotate(-45deg) translate(-6px, 13px);
-}
-
-.burger-menu.active .burger-icon span:nth-child(2) {
-    opacity: 0;
-}
-
-.burger-menu.active .burger-icon span:nth-child(3) {
-    transform: rotate(45deg) translate(-1px, -6px);
-}
-
 /*main-page*/
 
 .main-page {
@@ -302,20 +289,10 @@
 
 /*desktop-page*/
 
-@media (max-width: 1920px) {
-    .container-xxl {
-        max-width: 1400px;
-        padding: 3px;
-    }
-}
-
 /*laptop*/
 
 @media (max-width: 1440px) {
-    .container-xl {
-        max-width: 1200px;
-        padding: 3px;
-    }
+   
     
     /*header*/
 
@@ -358,51 +335,7 @@
 /*tablet*/
 
 @media (max-width: 1240px) {
-    .container-md {
-        max-width: 768px;
-        padding: 0 40px;
-    }
-
-    /*header*/
-    /*burger-menu*/
-/*
-
-    .nav,
-    .header-link-list,
-    .header-navigation
-     {
-        display: none;
-    }*/
-/*
-    .burger-backgroaund{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 1240px;
-        height: 100%;
-        background-color: var(--burger-background);
-        backdrop-filter: blur(20px);
-        z-index: -1;        
-    }
-*/
-    .burger-menu.active .nav.header-link-list.header-navigation {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 390px;
-        top: 0px;
-        left: 0;
-        background-color: var(--burger-menu);
-        z-index: 1;
-    }
-
-   /* .burger-icon {
-        position: absolute;
-        z-index: 1;
-        top: 55px;
-    }*/
-
+   
 
     /*main-page*/
 
@@ -499,41 +432,9 @@
 /*mobile*/
 
 @media (max-width: 767px) {
-    .container-sm {
-        position: relative;
-        max-width: 90%;
-        min-width: 375px;
-        padding: 0 25px;
-    }
+    
 
     /*header*/
-
-    /*burger*/
-
-    .burger-icon {
-        top: 26px;
-    }
-
-    .burger-icon {
-        width: 22px;
-    }
-
-    .burger-menu.active .nav.header-link-list.header-navigation {
-        width: 240px;
-    }
-
-    .horizontal-line {
-        width: 240px;
-    }
-
-    .burger-menu-logo {
-        width: 241px;
-    }
-
-    .burger-logo {
-        width: 140px;
-        margin: 50px 0 0 45px;
-    }
 
     /*main-page*/
 

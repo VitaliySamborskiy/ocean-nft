@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const burgerMenu = document.querySelector('.burger-menu');
     burgerMenu.addEventListener ('click', function () {
-        this.classList.toggle('active');
+        this.classList.toggle('burger-menu_active');
     })
 
 /*main-swiper*/

@@ -1,21 +1,52 @@
 .burger-menu {
+    display: none;
     &__body {
         display: none;
     }
-    
-    &__backgroaund {
-    }
 
-    &__body-backgroaund {
+    &__backgroaund {
         position: fixed;
-        top: 0;
-        left: 0;
         width: 1240px;
         height: 100%;
         background-color: $burgerBackground;
         backdrop-filter: blur(20px);
         z-index: -1;
+        
     }
+
+    &_active {
+    .nav.header-link-list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 390px;
+        top: 0px;
+        left: 0;
+        background-color: $BurgerMenu;
+        z-index: 1;
+    }}
+
+    &_active
+    &__icon {
+    span {
+    &:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 13px); 
+    }}}
+
+    &_active
+    &__icon {
+    span {
+    &:nth-child(2) {
+        opacity: 0;
+    }}}
+
+    &_active
+    &__icon {
+    span {
+    &:nth-child(3) {
+        transform: rotate(45deg) translate(-1px, -6px);
+    }}}
 
     &__header {
         background-color: $burgerHeader;
@@ -45,42 +76,80 @@
     &__icon {
         width: 25px;
         height: 22px;
-        position: relative;
+        top: 48px;
+        position: absolute;
         z-index: 1;
     }
 
-    &__icon span:nth-child(1) {
+    &__icon{
+    span{
+    &:nth-child(1) {
         width: 22px;
         height: 3px;
         border-radius: 2px;
         background: $whiteFontsColor;
         transition: 0.3s;
-    }
+    }}}
 
-    &__icon span:nth-child(2) {
+    &__icon{
+    span{
+    &:nth-child(2) {
         margin-left: 8px;
         width: 14px;
         height: 3px;
         border-radius: 2px;
         background: $whiteFontsColor;
         transition: 0.3s;
-    }
+    }}}
 
-    &__icon span:nth-child(3) {
+    &__icon{
+    span{ 
+    &:nth-child(3) {
         width: 22px;
         height: 3px;
         border-radius: 2px;
         background: $whiteFontsColor;
         transition: 0.3s;
-    }
-
-    &__icon span:nth-child(1) {
-
-    }
-
-
+    }}}
 }
 
-@include respond-below(md) {    
-   
+@keyframes fade {
+    from { 
+        opacity: 0;
+        transform:translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateX( 0px);
+    }
+}
+
+@include respond-below(md) {
+    .burger-menu{
+        display: block;
+    }    
+}
+
+@include respond-below(sm) {
+    .burger-menu{
+        &__horizontal-line {
+            width: 260px;
+        }
+
+        &__logo {
+            width: 140px;
+            margin: 50px 0 0 45px;
+        }
+
+        &__icon {
+            width: 22px;
+            top: 5px;
+        }
+
+        &_active {
+        .nav.header-link-list {
+            width: 260px;
+        }}
+    }
 }

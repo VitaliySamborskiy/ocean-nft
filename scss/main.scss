@@ -102,12 +102,47 @@ button {
     }
 }
 
+@include respond-below(xxl) {
+    .container-xxl {
+        max-width: 1400px;
+        padding: 3px;
+    }
+}
+
+@include respond-below(xl) {
+    .container-xl {
+        max-width: 1200px;
+        padding: 3px;
+    }
+}
+
 @include respond-below(md) {
+    .container-md {
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
     .title {
         font-size: 16px;
     }
 
     .button {
         display: flex;
+    }
+
+    .nav,
+    .header-link-list,
+    .header-navigation
+     {
+        display: none;
+    }
+}
+
+@include respond-below(sm) {
+    .container-sm {
+        position: relative;
+        max-width: 90%;
+        min-width: 375px;
+        padding: 0 25px;
     }
 }
