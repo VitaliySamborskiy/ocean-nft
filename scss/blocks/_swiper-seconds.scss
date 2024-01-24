@@ -19,7 +19,7 @@
     }
     
     .swiper-body {
-        &__block-overflow_hidden{
+        &__block-overflow-hidden{
             overflow: hidden;
         }
     
@@ -226,7 +226,7 @@
 @include respond-below(sm) {
     .swiper-seconds {
         .swiper-body {
-            &__block-overflow_hidden{
+            &__block-overflow-hidden{
                 width: 108%;
             }
 

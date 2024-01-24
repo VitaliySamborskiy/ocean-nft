@@ -1,336 +1,97 @@
 @import url(../scss/main.css);
 @import url(./colors.css);
 
-/*main-page*/
-
-.main-page {
-    margin-top: 101px;
-    width: 760px;
-}
-
-.main-gradient {
-    background: var(--violet-blue-gradient) ;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.titel-main-page {
-    font-size: 66px;
-    font-weight: 600;
-    line-height: 139%;
-    font-family: 'Spartan';
-}
-
-.text-main-page {
-    width: 700px;
-    margin-top: 21px;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 44px;
-    font-family: 'Rajdhani';
-}
-
-.main-arrow  {
-    margin-left: 5px;
-}
-
-.main-button {
-   margin-top: 42px; 
-}
-
-.buttom-main-text {
-    margin-left: 35px;
-    font-size: 20px;
-    font-weight: 700;
-    background: var(--blue-violet-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.main-button {
-    font-size: 20px;
-}
-
-.main-botton-background {
-    padding: 17px 32px 17px 67px;
-    background: var(--button-gradient);
-    clip-path: polygon( 99.934% 3.401%,99.934% 3.401%,99.922% 2.85%,99.889% 2.326%,99.835% 1.838%,99.763% 1.393%,99.675% 0.996%,99.571% 0.656%,99.456% 0.38%,99.329% 0.173%,99.193% 0.045%,99.049% 0%,16.971% 0%,16.971% 0%,16.932% 0.003%,16.893% 0.013%,16.854% 0.03%,16.816% 0.053%,16.777% 0.083%,16.739% 0.119%,16.702% 0.162%,16.665% 0.211%,16.629% 0.266%,16.593% 0.328%,0.506% 29.649%,0.506% 29.649%,0.416% 29.836%,0.334% 30.058%,0.26% 30.312%,0.194% 30.595%,0.137% 30.904%,0.089% 31.235%,0.051% 31.585%,0.023% 31.952%,0.006% 32.332%,0% 32.723%,0% 95.24%,0% 95.24%,0.012% 95.791%,0.045% 96.315%,0.099% 96.803%,0.171% 97.248%,0.259% 97.645%,0.362% 97.985%,0.478% 98.261%,0.605% 98.468%,0.741% 98.596%,0.884% 98.641%,85.948% 98.641%,85.948% 98.641%,85.989% 98.637%,86.029% 98.627%,86.069% 98.609%,86.108% 98.585%,86.148% 98.554%,86.186% 98.515%,86.225% 98.471%,86.263% 98.419%,86.3% 98.361%,86.336% 98.296%,99.437% 73.682%,99.437% 73.682%,99.525% 73.493%,99.605% 73.27%,99.678% 73.016%,99.743% 72.734%,99.799% 72.427%,99.846% 72.099%,99.884% 71.751%,99.911% 71.388%,99.928% 71.012%,99.934% 70.626%,99.934% 3.401% );  
-}
-
-.main-button-border {
-    padding: 2px;
-    clip-path: polygon( 99.934% 3.401%,99.934% 3.401%,99.922% 2.85%,99.889% 2.326%,99.835% 1.838%,99.763% 1.393%,99.675% 0.996%,99.571% 0.656%,99.456% 0.38%,99.329% 0.173%,99.193% 0.045%,99.049% 0%,16.971% 0%,16.971% 0%,16.932% 0.003%,16.893% 0.013%,16.854% 0.03%,16.816% 0.053%,16.777% 0.083%,16.739% 0.119%,16.702% 0.162%,16.665% 0.211%,16.629% 0.266%,16.593% 0.328%,0.506% 29.649%,0.506% 29.649%,0.416% 29.836%,0.334% 30.058%,0.26% 30.312%,0.194% 30.595%,0.137% 30.904%,0.089% 31.235%,0.051% 31.585%,0.023% 31.952%,0.006% 32.332%,0% 32.723%,0% 95.24%,0% 95.24%,0.012% 95.791%,0.045% 96.315%,0.099% 96.803%,0.171% 97.248%,0.259% 97.645%,0.362% 97.985%,0.478% 98.261%,0.605% 98.468%,0.741% 98.596%,0.884% 98.641%,85.948% 98.641%,85.948% 98.641%,85.989% 98.637%,86.029% 98.627%,86.069% 98.609%,86.108% 98.585%,86.148% 98.554%,86.186% 98.515%,86.225% 98.471%,86.263% 98.419%,86.3% 98.361%,86.336% 98.296%,99.437% 73.682%,99.437% 73.682%,99.525% 73.493%,99.605% 73.27%,99.678% 73.016%,99.743% 72.734%,99.799% 72.427%,99.846% 72.099%,99.884% 71.751%,99.911% 71.388%,99.928% 71.012%,99.934% 70.626%,99.934% 3.401% ); 
-    background: var(--button-border);
-    border-radius: 4px;
-}
-
-.main-page-score {
-    max-width: 480px;
-    margin-top: 65px;
-}
-
-.titel-score {
-    font-size: 40px;
-    letter-spacing: 0.221px;
-    line-height: 53px;
-    font-family: 'Aldrich';
-}
-
-.text-score {
-    font-size: 15px;
-    line-height: 17px; 
-    letter-spacing: 0.221px;
-    font-family: 'Alethia Next';
-}
-
-.main-vertical-line {
-    width: 1px; 
-    height:63px; 
-    background-color: #FFF; 
-    opacity: 26%;
-}
-
-.margin-score-1 {
+/* .margin-score-1 {
     margin-left: 15px;
     padding-left: 1px;
-}
-
-.margin-score-2 {
+} */
+/* .margin-score-2 {
     margin-left: 40px;
-}
-
-.margin-score-3 {
+} */
+/* .margin-score-3 {
     margin-left: 21px;
     padding-left: 1px;
-}
-
-.margin-score-4 {
+} */
+/* .margin-score-4 {
     margin-left: 46px;
-}
-
-.parent-element {
-    position: relative;  
-}
-
-.logo-sponsor{
+} */
+/* .logo-sponsor{
     position: absolute;
     bottom: -178px;
     left: 0;
-}
-
+} */
 /* main-swiper */
-
-.main-swiper-window {
-    width: 402px;
-    height: 477px;
-    clip-path: polygon( 0% 96.159%,0% 15.171%,0% 15.171%,0.021% 14.807%,0.084% 14.45%,0.188% 14.102%,0.33% 13.766%,0.509% 13.443%,0.725% 13.136%,0.975% 12.848%,1.259% 12.58%,1.574% 12.335%,1.919% 12.115%,21.901% 0.644%,21.901% 0.644%,22.124% 0.524%,22.355% 0.416%,22.592% 0.32%,22.835% 0.236%,23.083% 0.165%,23.337% 0.106%,23.594% 0.06%,23.854% 0.027%,24.117% 0.007%,24.382% 0%,95.421% 0%,95.421% 0%,96.135% 0.048%,96.812% 0.189%,97.443% 0.413%,98.02% 0.714%,98.533% 1.084%,98.972% 1.515%,99.33% 2%,99.597% 2.531%,99.764% 3.1%,99.821% 3.7%,99.821% 87.348%,99.821% 87.348%,99.802% 87.697%,99.744% 88.04%,99.648% 88.375%,99.517% 88.7%,99.351% 89.013%,99.151% 89.311%,98.918% 89.593%,98.655% 89.857%,98.361% 90.101%,98.039% 90.322%,83.885% 99.133%,83.885% 99.133%,83.653% 99.268%,83.412% 99.39%,83.164% 99.498%,82.908% 99.592%,82.645% 99.673%,82.378% 99.739%,82.105% 99.791%,81.829% 99.829%,81.549% 99.851%,81.267% 99.859%,4.4% 99.859%,4.4% 99.859%,3.686% 99.811%,3.009% 99.67%,2.378% 99.446%,1.801% 99.145%,1.289% 98.775%,0.849% 98.344%,0.491% 97.859%,0.224% 97.328%,0.058% 96.759%,0% 96.159% );
-    margin-top: 117px;
-    margin-left: 144px;
-}
-
 /*main-information-table-swiper*/
-
-.information-table {
-    position: absolute;
-    bottom: -21px;
-    right: -5px;
-}
-
-.main-information-border {
-    padding: 2px;
-    background: var(--main-informatipn-table-swiper-border);
-    backdrop-filter: blur(30px);
-    clip-path: polygon( 99.721% 74.86%,99.721% 94.754%,99.721% 94.754%,99.687% 95.542%,99.587% 96.29%,99.428% 96.987%,99.215% 97.623%,98.952% 98.19%,98.647% 98.675%,98.303% 99.07%,97.926% 99.365%,97.522% 99.549%,97.097% 99.613%,2.624% 99.613%,2.624% 99.613%,2.199% 99.549%,1.795% 99.365%,1.418% 99.07%,1.074% 98.675%,0.769% 98.19%,0.506% 97.623%,0.293% 96.987%,0.134% 96.29%,0.034% 95.542%,0% 94.754%,0% 27.075%,0% 27.075%,0.008% 26.689%,0.033% 26.308%,0.074% 25.933%,0.13% 25.566%,0.201% 25.209%,0.288% 24.864%,0.388% 24.531%,0.503% 24.214%,0.632% 23.912%,0.774% 23.629%,12.846% 1.413%,12.846% 1.413%,12.998% 1.153%,13.16% 0.918%,13.331% 0.709%,13.51% 0.525%,13.695% 0.367%,13.886% 0.237%,14.083% 0.134%,14.284% 0.06%,14.489% 0.015%,14.696% 0%,97.097% 0%,97.097% 0%,97.522% 0.064%,97.926% 0.248%,98.303% 0.542%,98.647% 0.938%,98.952% 1.423%,99.215% 1.989%,99.428% 2.626%,99.587% 3.323%,99.687% 4.071%,99.721% 4.859%,99.721% 74.86% );  
-}
-
-.main-information-table-swiper {
-    background: var(--main-information-table-swiper-fill);
-    width: 334px;
-    height: 179px;
-    clip-path: polygon( 99.721% 74.86%,99.721% 94.754%,99.721% 94.754%,99.687% 95.542%,99.587% 96.29%,99.428% 96.987%,99.215% 97.623%,98.952% 98.19%,98.647% 98.675%,98.303% 99.07%,97.926% 99.365%,97.522% 99.549%,97.097% 99.613%,2.624% 99.613%,2.624% 99.613%,2.199% 99.549%,1.795% 99.365%,1.418% 99.07%,1.074% 98.675%,0.769% 98.19%,0.506% 97.623%,0.293% 96.987%,0.134% 96.29%,0.034% 95.542%,0% 94.754%,0% 27.075%,0% 27.075%,0.008% 26.689%,0.033% 26.308%,0.074% 25.933%,0.13% 25.566%,0.201% 25.209%,0.288% 24.864%,0.388% 24.531%,0.503% 24.214%,0.632% 23.912%,0.774% 23.629%,12.846% 1.413%,12.846% 1.413%,12.998% 1.153%,13.16% 0.918%,13.331% 0.709%,13.51% 0.525%,13.695% 0.367%,13.886% 0.237%,14.083% 0.134%,14.284% 0.06%,14.489% 0.015%,14.696% 0%,97.097% 0%,97.097% 0%,97.522% 0.064%,97.926% 0.248%,98.303% 0.542%,98.647% 0.938%,98.952% 1.423%,99.215% 1.989%,99.428% 2.626%,99.587% 3.323%,99.687% 4.071%,99.721% 4.859%,99.721% 74.86% );
-    backdrop-filter: blur(30px);
-    padding: 28px 0 0 17px;
-}
-
-.main-information-titel {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 35px;
-    font-family: 'Rajdhani';
-}
-
-.author-info {
-    margin: 0 0 0 4px;
-}
-
-.avtor-name {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 210%;
-    font-family: 'Rajdhani';
-    margin-left: 3px;
-}
-
-.verified {
-    margin-left: 5px;
-}
-
-.main-information-wathc {
-    font-size: 11px;
-    font-weight: 600;
-    opacity: 0.7;
-    margin: 2px 0 0 2px;
-}
-
-.timer {
-    font-size: 17px;
-    font-weight: 600;
-    font-family: 'Rajdhani';
-}
-
-.wathc {
-    font-size: 11px;
-    font-weight: 500;
-    opacity: 0.7;
-}
-
+/* 
 .d-hours {
-    margin: 1px 0 0 0;
 }
-
 .d-minutes {
    margin: 1px 0 0 25px; 
 }
-
 .d-seconds {
     margin: 1px 0 0 28px;
 }
-
 .p-mins {
     margin: 0 0 0 18px;
 }
-
 .p-secs {
     margin: 0 0 0 23px;
-}
-
-.currency-info {
-    padding: 6px 0;
-}
-
-.titel-price {
-    margin: 20px 0 0 5px;
-    font-size: 11px;
-    font-weight: 600;
-    opacity: 0.7;
-}
-
-.name-cryptocurrency {
-    margin-left: 1px;
-    font-family: 'Orbitron';
-    font-size: 10px;
-    font-weight: 700;
-}
-
-.rate-dollar {
-    margin-left: 6px;
-    font-size: 11px;
-    font-weight: 400;
-}
-
-.wathc-section {
+} */
+/* .wathc-section {
     position: absolute;
     top: 37px;
     left: 198px;
-}
-
-.botton-info {
-    padding: 6px 8px 6px 10px;
-    background: var(--swiper-botton-fill);
-    border-radius: 5px; 
-}
-
-.swiper-button-border {
-    margin: 27px 0 0 50px;
-    padding: 2px;
-    background: var(--swiper-botton-border);
-    border-radius: 5px;
-}
-
-.text-button-info {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Rajdhani';
-}
-
-.magin-arrow {
+} */
+/* .magin-arrow {
     margin-left: 7px;
-}
+} */
 
 /*lolgo-img*/
-
+/* 
 .logo-binance {
     margin: 0 134px 0 5px;
 }
-
 .logo-ethereum {
     margin: 0 151px 0 0;
 }
-
 .logo-blockchain {
     margin: 0px 158px 0 0;
 }
-
 .logo-bitmex {
     margin-top: 14px;
-}
-
+} */
 /*desktop-page*/
-
 /*laptop*/
 
-@media (max-width: 1440px) {
-   
-    
-    /*header*/
 
+    /* header*/
     /*main-page*/
-
-    .main-page {
+    /* .main-page {
         margin-top: 70px;
-    } 
-
-    .main-swiper-window {
+    }  */
+    /* .main-swiper-window {
         margin: 80px 0 0 90px;
     }
-
     .information-table {
         bottom: 50px;
         right: -20px;
     }
-
     .main-page-score {
         margin-top: 55px;
     }
-
     .logo-binance {
         margin: 0 70px 0 5px;
     }
-    
     .logo-ethereum {
         margin: 0 70px 0 0;
     }
-    
     .logo-blockchain {
         margin: 0 70px 0 0;
     }
-
     .logo-sponsor{
         bottom: -140px;
-    }
-}
+    } */
+
 
 /*tablet*/
 
@@ -339,21 +100,12 @@
 
     /*main-page*/
 
-    .main-page {
-        width: 400px;
-    }
 
-    .titel-main-page {
-        font-size: 42px;
-        line-height: 137.4%;
-        font-family: 'Lato';
-    }
-
-    .text-main-page {
-        font-size: 14px;
+    /* .text-main-page {
+        
         line-height: 165.845%;
         font-weight: 400;
-        width: 315px;
+        
     }
 
     .buttom-main-text {
@@ -382,10 +134,7 @@
     }
 
     .text-score {
-        font-size: 12px;
         line-height: 98.31%;
-        font-family: 'Lato';
-        margin-top: 2px;
     }
 
     .main-vertical-line {
@@ -426,7 +175,7 @@
 
     .logo-sponsor{
         bottom: -60px;
-    }
+    } */
 }
 
 /*mobile*/
@@ -438,12 +187,12 @@
 
     /*main-page*/
 
-    .main-page {
+    /* .main-page {
         margin: 50px 0 0 5px;
         width: 300px;
-    }
+    } */
 
-    .titel-main-page {
+    /* .titel-main-page {
         width: 300px;
     } 
 
@@ -527,7 +276,7 @@
     .information-table {
         bottom: -42px;
         right: -2px;
-    }
+    } */
 
     /*tablet*/
 

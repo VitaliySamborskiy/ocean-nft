@@ -50,11 +50,12 @@
                         </a>
                     </li>
                 </ul>
+
                 <div class="burger-menu">
                     <ul class="burger-menu__body nav header-link-list">
-                        <li class="burger-menu__backgroaund"></li>
+                        <li class="burger-menu__background"></li>
                     </ul>
-                    <ul class="burger-menu__body-backgroaund nav header-link-list">
+                    <ul class="burger-menu__body-background nav header-link-list">
                         <li class="burger-menu__header">
                         <a href="#">
                             <img class="burger-menu__logo img-fluid" src="./img/logo.png" alt="Logo Ocean NFT">
@@ -94,77 +95,80 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="container-xxl container-xl container-md container-sm">
-            <div class="d-flex main-tablet-adaptiv parent-element mobile-adaptiv">
-                <div class="main-page">
-                    <h1 class="titel-main-page">Discover, collect, and sell <span class="main-gradient">Timeless</span> NFTs</h1>
-                    <p class="text-main-page">The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs).</p>
-                    <div class="d-flex align-items-center main-button">
-                        <div class="main-button-border">
-                            <a class="text-decoration-none d-inline-block text-button main-botton-background" href="#"> Explore
-                                <svg class="main-arrow" xmlns="http://www.w3.org/2000/svg" width="53" height="17" viewBox="0 0 53 17" fill="none">
+
+        <section class="main-page container-xxl container-xl container-md container-sm">
+            <div class="main-page__container d-flex flex-wrap">
+
+                <div class="main-page__text-section">
+                    <h1 class="main-page__title">Discover, collect, and sell <span class="main-page__gradient">Timeless</span> NFTs</h1>
+                    <p class="main-page__text text-main-page">The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs).</p>
+                    <div class="main-page__button-section d-flex align-items-center">
+                        <div class="main-page__button-box"></div>
+                        <div class="main-page__button-border">
+                            <a class="main-page__fill text-decoration-none d-inline-block" href="#"> Explore
+                                <svg class="main-page__arrow" xmlns="http://www.w3.org/2000/svg" width="53" height="17" viewBox="0 0 53 17" fill="none">
                                     <path d="M43.3723 14.101L48.8995 8.57366L43.3723 3.04637L44.4777 0.835449L52.2159 8.57366L44.4777 16.3119L43.3723 14.101Z" fill="white"/>
                                     <line x1="48.8995" y1="8.57372" x2="0.259327" y2="8.57372" stroke="white" stroke-width="2.21092"/>
                                     </svg>
                              </a>
                         </div>
-                        <h3 class="buttom-main-text ">Create NFT’s</h3>
+                        <h3 class="main-page__button-text">Create NFT’s</h3>
                     </div>
-                    <div class="d-flex main-page-score align-items-end">
+                    <div class="main-page__score d-flex align-items-end justify-content-between">
                         <div>
-                            <p class="titel-score">35m+</p>
-                            <p class="text-score">Artwork</p>
+                            <p class="main-page__score-number">35m+</p>
+                            <p class="main-page__score-text">Artwork</p>
                         </div>
-                        <div class="main-vertical-line margin-score-1"></div>
-                        <div class="margin-score-2">
-                            <p class="titel-score">18m+</p>
-                            <p class="text-score">Auctions</p>
+                        <div class="main-page__vertical-line"></div>
+                        <div class="main-page__score-items">
+                            <p class="main-page__score-number">18m+</p>
+                            <p class="main-page__score-text">Auctions</p>
                         </div>
-                        <div class="main-vertical-line margin-score-3"></div>
-                        <div class="margin-score-4">
-                            <p class="titel-score">500k+</p>
-                            <p class="text-score">Artists</p>
+                        <div class="main-page__vertical-line"></div>
+                        <div class="main-page__score-items">
+                            <p class="main-page__score-number">500k+</p>
+                            <p class="main-page__score-text">Artists</p>
                         </div>
                     </div>
                 </div>
-                <div class="mobile-revirse">
+
+                <div class="main-page__information-section">
                     <div>
-                        <div class="mobile-img">
-                            <div class="main-swiper-window">
-                                <img class="img-fluid main-slide" src="./img/slide-1.jpg" alt="slide 1">
-                            </div>
-                        </div>
-                        <div class="main-information-border information-table">
-                            <div class="main-information-table-swiper">
+                        <div class="main-page__section-img">
+                            <img class="main-page__img img-fluid main-slide" src="./img/slide-1.jpg" alt="slide 1">
+                        </div>                   
+                        <div class="main-page__border-information">
+                            <div class="main-page__fill-information">
                                 <div class="d-flex align-items-center">
-                                    <div class="author-info">
-                                        <h3 class="main-information-titel">3D Abstract Hand</h3>
+                                    <div class="main-page__author-info">
+                                        <h3 class="main-page__information-titel">3D Abstract Hand</h3>
                                         <div class="d-flex align-items-center">
                                             <img class="img-fluid" src="./img/avatar-1.png" alt="the author of the avatar">
-                                            <h3 class="avtor-name">@jhonartist</h3>
-                                            <img class="img-fluid verified" src="./img/daw.png" alt="verified author">
+                                            <h3 class="main-page__avtor-name">@jhonartist</h3>
+                                            <img class="main-page__verified img-fluid" src="./img/daw.png" alt="verified author">
                                         </div>
                                     </div>
-                                    <div class="wathc-section">
-                                        <p class="main-information-wathc">Auction Ends in</p>
-                                        <div class="d-flex align-items-center" id="countdown">
-                                            <div id="hours" class="timer d-hours"></div>
-                                            <div id="minutes" class="timer d-minutes"></div>
-                                            <div id="seconds" class="timer d-seconds"></div>
+                                    <div class="main-page__watch-section">
+                                        <p class="main-page__title-wathc">Auction Ends in</p>
+                                        <div class="main-page__watch-number d-flex align-items-center justify-content-between">
+                                            <p class="main-page__timer">18</p>
+                                            <p class="main-page__timer">25</p>
+                                            <p class="main-page__timer">44</p>
                                         </div>
-                                        <div class="d-flex align-items-center">
-                                            <p class="wathc p-hours">Hours</p>
-                                            <p class="wathc p-mins">Mins</p>
-                                            <p class="wathc p-secs">Secs</p>
+                                        <div class="main-page__watch-text d-flex align-items-center justify-content-between">
+                                            <p class="main-page__watch">Hours</p>
+                                            <p class="main-page__watch">Mins</p>
+                                            <p class="main-page__watch">Secs</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <p class="titel-price">Reserve price</p>
-                                            <div class="d-flex align-items-center currency-info">
+                                            <p class="main-page__titel-price">Reserve price</p>
+                                            <div class="main-page__cryptocurrency-img d-flex align-items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                     <path d="M9.87327 1.10034L4.41006 10.1662L9.87327 7.6831V1.10034Z" fill="white"/>
                                                     <path d="M9.87327 7.68286L4.41006 10.1659L9.87327 13.3961V7.68286Z" fill="white"/>
@@ -173,13 +177,13 @@
                                                     <path d="M4.41006 11.2029L9.87327 18.9022V14.431L4.41006 11.2029Z" fill="white"/>
                                                     <path d="M9.87286 14.431V18.9022L15.3401 11.2029L9.87286 14.431Z" fill="white"/>
                                                 </svg>
-                                                <p class="name-cryptocurrency">ETH 9.31</p>
-                                                <p class="rate-dollar">($29,8846)</p>
+                                                <p class="main-page__cryptocurrency">ETH 9.31</p>
+                                                <p class="main-page__dollar">($29,8846)</p>
                                             </div>
                                         </div>
-                                        <div class="swiper-button-border">
-                                            <a class="text-decoration-none d-inline-block text-button-info botton-info" href="#"> Place Bid
-                                                <svg class="magin-arrow" xmlns="http://www.w3.org/2000/svg" width="25" height="10" viewBox="0 0 25 10" fill="none">
+                                        <div class="main-page__button-outline">
+                                            <a class="main-page__background-botton text-decoration-none d-inline-block" href="#"> Place Bid
+                                                <svg class="main-page__arrow" xmlns="http://www.w3.org/2000/svg" width="25" height="10" viewBox="0 0 25 10" fill="none">
                                                     <path d="M19.3086 8.29153L22.6015 4.99867L19.3086 1.70581L19.9672 0.388672L24.5772 4.99867L19.9672 9.60867L19.3086 8.29153Z" fill="white"/>
                                                     <line x1="23.4717" y1="5.36328" x2="0.257097" y2="5.36328" stroke="white" stroke-width="1.10546"/>
                                                 </svg>
@@ -189,21 +193,21 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex align-items-center adaptive-mobile logo-sponsor">
-                        <div class="d-flex mobile-flex">
-                            <img class="img-fluid logo-binance" src="./img/Binance_logo.svg" alt="logo binance">
-                            <img class="img-fluid logo-ethereum" src="img/Ethereum logo.svg" alt="logo ethereum">
-                        </div>
-                        <div class="d-flex support-logo mobile-flex">
-                            <img class="img-fluid logo-blockchain" src="./img/Blockchain.io logo.svg" alt="logo blockchain">
-                            <img class="img-fluid logo-bitmex" src="./img/bitmex.svg" alt="logo bitmex">
-                        </div> 
-                    </div>   
-                </div>                          
+                    </div> 
+                </div> 
+
+                <div class="main-page__logo-section d-flex flex-wrap align-items-center justify-content-between">
+                        <img class="main-page__logo-item img-fluid" src="./img/Binance_logo.svg" alt="logo binance">
+                        <img class="main-page__logo-item img-fluid" src="img/Ethereum logo.svg" alt="logo ethereum">
+                        <img class="main-page__logo-item img-fluid" src="./img/Blockchain.io logo.svg" alt="logo blockchain">
+                        <img class="main-page__logo-item img-fluid" src="./img/bitmex.svg" alt="logo bitmex">
+                </div>
+
             </div>
         </section>
+
         <section class="swiper-first container-xxl container-xl container-md container-sm">
+
             <div class="swiper-header">
                 <div class="swiper-header__content d-flex align-items-center justify-content-between">
                     <h2 class="swiper-header__title title">Top NFT’s now</h2>
@@ -217,15 +221,18 @@
                     </div>  
                 </div>
             </div>
+
             <div class="swiper-body">
-                <div class="swiper-body__overflow_hidden">
+                <div class="swiper-body__overflow-hidden">
                     <div class="swiper-body__content">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide swiper-slide-1">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-2.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Apollo Eth #1289 NFT</h3>
                                                 <div class="d-flex align-items-center">
@@ -234,6 +241,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-1">
@@ -247,8 +255,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -266,6 +276,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -274,13 +285,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-2">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-3.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Sassy Bull #1169 Art</h3>
                                                 <div class="d-flex align-items-center">
@@ -289,6 +303,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-2">
@@ -302,8 +317,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -321,6 +338,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -329,13 +347,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-3">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-4.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Satisfying 3D Art</h3>
                                                 <div class="d-flex align-items-center">
@@ -344,6 +365,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-3">
@@ -357,8 +379,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -376,6 +400,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -384,13 +409,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-1">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-2.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Apollo Eth #1289 NFT</h3>
                                                 <div class="d-flex align-items-center">
@@ -399,6 +427,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-1">
@@ -412,8 +441,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -431,6 +462,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -439,13 +471,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-2">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-3.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Sassy Bull #1169 Art</h3>
                                                 <div class="d-flex align-items-center">
@@ -454,6 +489,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-2">
@@ -467,8 +503,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -486,6 +524,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -494,13 +533,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-3">
+
+                                <div class="swiper-slide">
                                     <img class="swiper-body__img" src="./img/slide-4.jpg" alt="">
                                     <div class="swiper-body__info">
                                         <div class="d-flex">
+
                                             <div class="swiper-body__avtor-section">
                                                 <h3 class="swiper-body__avtor-title">Satisfying 3D Art</h3>
                                                 <div class="d-flex align-items-center">
@@ -509,6 +551,7 @@
                                                     <img class="swiper-body__avtor-verified img-fluid" src="./img/daw-1.png" alt="verified author">
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__wathc-section">
                                                 <p class="swiper-body__wathc-title">Auction Ends in</p>
                                                 <div class="swiper-body__wathc-clockface  d-flex align-items-center" id="countdown-3">
@@ -522,8 +565,10 @@
                                                     <p class="swiper-body__wathc-text-secs">Secs</p>
                                                 </div>
                                             </div>
+
                                         </div>
                                         <div class="d-flex align-items-center">
+
                                             <div class="swiper-body__price-section">
                                                 <h4 class="swiper-body__price-title">Reserve price</h4>
                                                 <div class="swiper-body__price-info d-flex align-items-center">
@@ -541,6 +586,7 @@
                                                       </div>
                                                 </div>
                                             </div>
+
                                             <div class="swiper-body__button d-flex align-items-center">
                                                 <a class="swiper-body__button-text text-decoration-none d-inline-block" href="#"> Place Bid
                                                     <svg class="swiper-body__button-arrow" xmlns="http://www.w3.org/2000/svg" width="33" height="13" viewBox="0 0 33 13" fill="none">
@@ -549,13 +595,16 @@
                                                     </svg>
                                                 </a>
                                             </div>
+
                                         </div>                                 
                                     </div>
                                 </div>
+
                             </div> 
                         </div>
                     </div>     
                 </div>
+
                 <div class="button">
                     <div class="button__border swiper_clikc">
                         <a class="button__text text-decoration-none" href="#link">Explore
@@ -566,12 +615,15 @@
                         </a>
                     </div>  
                 </div>
+
             </div>            
         </section>
+
         <section class="tabs container-xxl container-xl container-md container-sm">
             <div class="tabs__container d-flex flex-wrap justify-content-between">
                 <div class="tabs-header">
                     <h2 class="tabs-header__title title">Explore Collections</h2>
+
                     <div class="tabs-header__container">
                         <nav class="tabs-header__items d-flex">
                             <div class="d-flex flex-column">
@@ -596,7 +648,9 @@
                             </a>
                         </div>                       
                     </div>
+
                 </div>
+
                 <div class="tabs-body d-flex justify-content-center">
                     <div class="tabs-body__conteiner">
                         <div id="tab-1" class="tabs-body__block">
@@ -625,9 +679,12 @@
                         </div>
                     </div>                   
                 </div>
+
             </div>
         </section>
+
         <section class="swiper-seconds container-xxl container-xl container-md container-sm">
+
             <div class="swiper-header">
                 <div class="swiper-header__content d-flex align-items-center justify-content-between">
                     <h2 class="swiper-header__title title">Explore Collections</h2>
@@ -641,11 +698,13 @@
                     </div>  
                 </div>
             </div>
+
             <div class="swiper-body">
-                <div class="swiper-body__block-overflow_hidden">
+                <div class="swiper-body__block-overflow-hidden">
                     <div class="swiper-body__block">
                         <div class="swiper">
                             <div class="swiper-wrapper">
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -676,6 +735,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -706,6 +766,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -736,6 +797,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -766,6 +828,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -796,6 +859,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
                                     <div class="swiper-body__item d-flex">
                                         <img class="swiper-body__img-background" src="./img/swiper-seconds/background.jpg" alt="background">
@@ -826,13 +890,15 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="button">
                     <div class="button__border swiper_clikc">
-                        <a class="button__text text-decoration-none" href="#link">Explore
+                        <a class="button__text text-decoration-none" href="#">Explore
                             <svg class=".button__arrow" xmlns="http://www.w3.org/2000/svg" width="29" height="9" viewBox="0 0 29 9" fill="none">
                                 <path d="M23.4839 7.64548L26.4332 4.69617L23.4839 1.74686L24.0737 0.567139L28.2028 4.69617L24.0737 8.8252L23.4839 7.64548Z" fill="white"/>
                                 <line x1="26.4333" y1="4.69631" x2="0.479431" y2="4.6963" stroke="white" stroke-width="1.17972"/>
@@ -840,8 +906,10 @@
                         </a>
                     </div>  
                 </div>
+
             </div>
         </section>
+
         <section class="sellers container-xxl container-xl container-md container-sm">
             <div class="sellers-header">
                 <div class="sellers-header__title-container d-flex align-items-center justify-content-center">
@@ -856,6 +924,7 @@
                 </div>  
                 <p class="sellers-header__text text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim minim mollit.</p>
             </div>
+
             <div class="sellers-body">
                 <div class="sellers-body__element_click sellers-body__overflow-hidden">
                     <div class="sellers-body__content d-grid">
@@ -875,6 +944,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">2</p>
@@ -891,6 +961,7 @@
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">3</p>
@@ -907,6 +978,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">4</p>
@@ -923,6 +995,7 @@
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">5</p>
@@ -939,6 +1012,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">6</p>
@@ -955,6 +1029,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">7</p>
@@ -971,6 +1046,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">8</p>
@@ -987,6 +1063,7 @@
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">9</p>
@@ -1003,6 +1080,7 @@
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">10</p>
@@ -1019,6 +1097,7 @@
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">11</p>
@@ -1035,6 +1114,7 @@
                             </div>  
                             <p class="sellers-body__score green">+468.48%</p>
                         </div>
+
                         <div class="sellers-body__item d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <p class="sellers-body__number">12</p>
@@ -1050,12 +1130,14 @@
                                 </div>
                             </div>  
                             <p class="sellers-body__score red">+468.48%</p>
-                        </div>  
+                        </div> 
+
                     </div>
                 </div>
                 <div class="sellers-body__botton-section d-flex justify-content-center">
                     <button class="sellers-body__botton sellers-body__botton_click text-decoration-none" onclick="toggleClass()">Explore all</button>
                 </div>
+
                 <div class="button">
                     <div class="button__border sellers-body__botton-mobile swiper_clikc">
                         <a class="button__text text-decoration-none" href="#link" onclick="toggleClass()">Explore
@@ -1068,6 +1150,7 @@
                 </div>
             </div>
         </section>
+
         <section class="text">
             <div class="text__img-section">
                 <img class="text__img" src="./img/text-section/background.jpg" alt="">
@@ -1107,6 +1190,7 @@
             </div>
         </section>
     </main>
+
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
