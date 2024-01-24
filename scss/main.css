@@ -101,10 +101,7 @@
   src: url("../fonts/lato-v24-latin-700.woff2") format("woff2"), url("../fonts/lato-v24-latin-700.woff") format("woff");
 }
 .header__section {
-  margin: 42px 0 0 6px;
-}
-.header__logo {
-  margin-left: 2px;
+  margin: 42px 0 0 8px;
 }
 .header__items {
   margin-left: 229px;
@@ -144,10 +141,13 @@
   .header__section {
     width: 660px;
   }
+  .header__section {
+    margin: 42px 0 0 0px;
+  }
 }
 @media (max-width: 767px) {
   .header__section {
-    width: 90%;
+    width: 92%;
   }
   .header__mobile-logo {
     width: 112px;
@@ -543,6 +543,11 @@
   }
 }
 @media (max-width: 767px) {
+  .main-page__fill-information {
+    width: 324px;
+    height: 175px;
+    padding: 21px 0 0 16px;
+  }
   .main-page__img {
     margin: 0;
     width: 402px;
@@ -560,12 +565,32 @@
   .main-page__text-section {
     margin: 0 auto;
   }
+  .main-page__button-outline {
+    margin: 20px 0 0 45px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  .main-page__background-botton {
+    font-size: 17px;
+  }
+  .main-page__arrow {
+    width: 23px;
+  }
+  .main-page__titel-price {
+    margin: 15px 0 0 5px;
+  }
+  .main-page__cryptocurrency-img {
+    padding: 5px 0;
+  }
   .main-page__text {
     width: 95%;
   }
   .main-page__border-information {
     bottom: -125px;
-    right: -3px;
+    right: 0px;
+  }
+  .main-page__watch-section {
+    margin: 9px 0 0 40px;
   }
   .main-page__logo-section {
     display: flex !important;

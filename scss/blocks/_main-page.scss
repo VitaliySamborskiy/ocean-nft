@@ -335,6 +335,12 @@
 
 @include respond-below(sm) {
     .main-page {
+        &__fill-information {
+            width: 324px;
+            height: 175px;
+            padding: 21px 0 0 16px;
+        }
+
         &__img {
             margin: 0;
             width: 402px;
@@ -355,13 +361,39 @@
             margin: 0 auto;
         }
 
+        &__button-outline {
+            margin: 20px 0 0 45px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        &__background-botton {
+            font-size: 17px;
+        }
+
+        &__arrow {
+            width: 23px;
+        }
+
+        &__titel-price {
+            margin: 15px 0 0 5px;
+        }
+
+        &__cryptocurrency-img {
+            padding: 5px 0;
+        }
+
         &__text {
             width: 95%;
         }
 
         &__border-information {
             bottom: -125px;
-            right: -3px;
+            right: 0px;
+        }
+
+        &__watch-section {
+            margin: 9px 0 0 40px;
         }
 
         &__logo-section {

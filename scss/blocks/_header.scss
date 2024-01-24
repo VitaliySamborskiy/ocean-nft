@@ -1,10 +1,6 @@
 .header {
     &__section {
-        margin: 42px 0 0 6px;
-    }
-
-    &__logo {
-        margin-left: 2px;
+        margin: 42px 0 0 8px;
     }
 
     &__items {
@@ -56,13 +52,17 @@
         &__section {
             width: 660px;
         }
+
+        &__section {
+            margin: 42px 0 0 0px;
+        }
     }
 }
 
 @include respond-below(sm) {
     .header{
         &__section {
-            width: 90%;
+            width: 92%;
         }
 
         &__mobile-logo {
