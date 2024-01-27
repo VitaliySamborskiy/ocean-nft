@@ -2,7 +2,7 @@
 .swiper-first {
     .swiper-header {
         &__content {
-            margin-top: 207px;
+            margin-top: 210px;
             width: 1380px;
         }
     
@@ -319,7 +319,8 @@
             }
 
             &__overflow-hidden {
-                width: 108%;
+                width: 100%;
+                overflow: hidden;
             }
 
             &__info {

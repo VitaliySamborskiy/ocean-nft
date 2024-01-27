@@ -3,18 +3,19 @@
         position: relative;
     }
     &__img-section{
-        margin-top: 155px;
+        overflow: hidden;
+        margin-top: 156px;
+        height: 556px;
     }
 
     &__img {
-        width: 100%;
-        aspect-ratio: 6/1.75;
+        width: 1920px;
     }
 
     &__info {
         position: absolute;
         right: 39px;
-        top: -333px;
+        top: -337px;
         width: 577px;
         padding: 58px 0 46px 71px;
         background: $mainInfoTableFill;
@@ -56,13 +57,14 @@
 
 @include respond-below(xl) {
     .text{
-        &__info {
-            right: 39px;
-            top: -330px;
+
+        &__img-section{
+            height: 500px;
         }
 
-        &__img {
-            aspect-ratio: 6/2;
+        &__info {
+            right: 39px;
+            top: -360px;
         }
     }
 }
@@ -71,11 +73,16 @@
     .text {
         &__img-section{
             margin-top: 108px;
+            height: 320px                
+        }
+
+        &__img {
+            width: 1300px;
         }
     
         &__info {
             right: 10px;
-            top: -230px;
+            top: -210px;
             width: 335px;
             padding: 34px 0 25px 38px;
             border: 2px solid $MainInfoBorder;
@@ -110,12 +117,12 @@
 @include respond-below(sm) {
     .text {
         &__img {
-            aspect-ratio: 6/3;
+            width: 850px;
         }
     
         &__info {
             right: 22px;
-            top: -175px;
+            top: -195px;
         }
     }
 }

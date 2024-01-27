@@ -76,15 +76,15 @@ document.querySelectorAll('.tabs-header__item').forEach((item) =>
       const id = e.target.getAttribute('href').replace('#', '');
 
       document.querySelectorAll('.tabs-header__item').forEach(
-          (child) => child.classList.remove('tabs-header__item--active')
+          (child) => child.classList.remove('tabs-header__item_active')
       );
 
       document.querySelectorAll('.tabs-body__block').forEach(
-          (child) => child.classList.remove('tabs-body__block--active')
+          (child) => child.classList.remove('tabs-body__block_active')
       );
 
-      item.classList.add('tabs-header__item--active');
-      document.getElementById(id).classList.add('tabs-body__block--active'); 
+      item.classList.add('tabs-header__item_active');
+      document.getElementById(id).classList.add('tabs-body__block_active'); 
   })
 );
 

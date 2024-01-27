@@ -12,8 +12,8 @@
     }
 
     &__img {
-        width: 100%; 
-        height: auto;
+        width: 699px; 
+        height: 469px;
     }
 
     &__info{
@@ -86,10 +86,6 @@
             border-radius: 4px;
         }
     
-        &__img {
-            width: 100%;
-        }
-    
         &__info{
             margin: 150px 0 0 30px;
         }
@@ -115,9 +111,9 @@
         }
     
         &__button-border {
-            margin-left: 2px;
+            margin-left: 1px;
             padding: 2px;
-            border-radius:  0 4px 4px 0;
+            border-radius: 0 4px 4px 0;
         }
     
         &__button {
@@ -129,7 +125,7 @@
 }
 
 @include respond-below(sm) {
-    .subscribe {
+    .subscribe {        
         &__content {
             margin: 0;
             flex-wrap: wrap;
@@ -144,7 +140,17 @@
         }
     
         &__info{
-            margin: 215px auto 0 ;
+            margin: 188px auto 0 ;
+        }
+
+        &__text {
+            margin-top: 15px;
+            width: 95%;
+            font-size: 13px;
+        }
+
+        &__input {
+            width: 56%;
         }
     }
 }
