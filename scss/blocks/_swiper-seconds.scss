@@ -20,11 +20,10 @@
     
     .swiper-body {
         &__block-overflow-hidden{
+            padding-left: 8px;
+            width: 1395px;
+            margin: 43px auto 0;
             overflow: hidden;
-        }
-    
-        &__block {
-            margin: 43px 0 0 8px;
         }
         
         &__item {
@@ -126,7 +125,11 @@
         }
         .swiper-body {
             &__block {
-                width: 1385px;
+                width: 1340px;
+            }
+
+            &__block-overflow-hidden {
+                width: 1200px;
             }
         }
     }
@@ -150,8 +153,11 @@
         }
         .swiper-body {
             &__block {
-                margin-left: 0;
                 width: 900px;
+            }
+
+            &__block-overflow-hidden{
+                width: 688px;
             }
 
             &__img-background {
@@ -227,7 +233,10 @@
     .swiper-seconds {
         .swiper-body {
             &__block-overflow-hidden{
-                width: 100%;
+                margin-top: 0;
+                margin-left: 4%;
+                padding-left: 15px;
+                width: 96%;
             }
 
             &__block {

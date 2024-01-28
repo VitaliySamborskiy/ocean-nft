@@ -20,11 +20,11 @@
         }
     }
     .swiper-body {
-        &__content {
-            margin: 43px 0 0 8px;
-        }
 
         &__overflow-hidden {
+            padding-left: 8px;
+            width: 1395px;
+            margin: 40px auto 0;
             overflow: hidden;
         }
       
@@ -70,7 +70,7 @@
         &__wathc-section {
             margin-top: 12px;
             position: absolute;
-               right: 30px;
+            right: 30px;
         }
 
         &__wathc-title {
@@ -171,6 +171,10 @@
             &__content {
                 width: 1340px;
             }
+
+            &__overflow-hidden {
+                width: 1200px;
+            }
         }
     }
 }
@@ -188,7 +192,6 @@
         }
         .swiper-body {
             &__content {
-                margin-left: 0;
                 width: 900px;
             }
 
@@ -305,7 +308,7 @@
     .swiper-first {
         .swiper-header {
             &__content {
-                margin-top: 230px;
+                margin-top: 235px;
             }
             
             &__title {
@@ -314,13 +317,15 @@
         }
         .swiper-body {
             &__content {
-                width: 960px;
+                width: 930px;
                 margin-top: 36px;
             }
 
             &__overflow-hidden {
-                width: 100%;
-                overflow: hidden;
+                margin-top: 0;
+                margin-left: 4%;
+                padding-left: 15px;
+                width: 96%;
             }
 
             &__info {

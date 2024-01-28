@@ -1,31 +1,37 @@
 .burger-menu {
     display: none;
-    &__body {
-        display: none;
-    }
 
     &__background {
         position: fixed;
         width: 1240px;
         height: 100%;
+        top: 0;
+        left: -1240px;
         background-color: $burgerBackground;
         backdrop-filter: blur(20px);
-        z-index: -1;
-        
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
     }
 
-    &_active {
-    .nav.header-link-list {
-        display: flex;
-        flex-direction: column;
+    &__body-background {
         position: fixed;
-        height: 100%;
-        width: 390px;
-        top: 0px;
-        left: 0;
+        top: 0;
+        left: -390px;
         background-color: $BurgerMenu;
+        height: 100%;
         z-index: 1;
-    }}
+        transition: left 0.8s ease-out;
+    }
+
+    &__background_active {
+        opacity: 1;
+        left: 0;
+    }
+
+    &__body-background_active {
+        left: 0;
+    }
 
     &_active
     &__icon {
@@ -76,9 +82,8 @@
     &__icon {
         width: 25px;
         height: 22px;
-        top: 48px;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
     }
 
     &__icon{
@@ -113,16 +118,8 @@
     }}}
 }
 
-@keyframes fade {
-    from { 
-        opacity: 0;
-        transform:translateX(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform:translateX( 0px);
-    }
+.look {
+    overflow: hidden;
 }
 
 @include respond-below(md) {

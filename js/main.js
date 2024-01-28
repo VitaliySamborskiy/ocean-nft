@@ -47,10 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*burger-menu*/
 
-    const burgerMenu = document.querySelector('.burger-menu');
-    burgerMenu.addEventListener ('click', function () {
-        this.classList.toggle('burger-menu_active');
-    })
+    let burgerMenu = document.querySelector('.burger-menu');
+    let burgerMenuBackground = document.querySelector('.burger-menu__background');
+    let burgerItem = document.querySelector('.burger-menu__body-background');
+    let look = document.body;
+
+    burgerMenu.addEventListener('click', function(){
+        burgerMenu.classList.toggle('burger-menu_active');
+        burgerMenuBackground.classList.toggle('burger-menu__background_active');
+        burgerItem.classList.toggle('burger-menu__body-background_active');
+        look.classList.toggle('look');
+    });
 
 /*main-swiper*/
 

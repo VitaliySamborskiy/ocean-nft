@@ -1,5 +1,6 @@
 .header {
     &__section {
+        // position: relative;
         margin: 49px 0 0 8px;
     }
 
@@ -62,6 +63,7 @@
 @include respond-below(sm) {
     .header{
         &__section {
+            margin: 22px 0 0 0;
             width: 92%;
         }
 
