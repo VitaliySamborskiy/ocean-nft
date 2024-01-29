@@ -271,6 +271,29 @@
 .main-page__container {
   position: relative;
 }
+.main-page__blur-element-1 {
+  position: absolute;
+  width: 1px;
+  top: 610px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 187px 50px #FF00C8;
+  z-index: -2;
+}
+.main-page__blur-element-2 {
+  position: absolute;
+  width: 1px;
+  top: 420px;
+  left: 630px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 117px 25px #FFB1EE;
+  z-index: -2;
+}
+.main-page__background-element {
+  position: absolute;
+  top: 425px;
+  left: 730px;
+  z-index: -2;
+}
 .main-page .main-text-section__title {
   margin-top: 107px;
   width: 760px;
@@ -345,6 +368,17 @@
   height: 63px;
   background-color: #FFFFFF;
   opacity: 26%;
+}
+.main-page .main-img-section__blur-img {
+  position: absolute;
+  width: 200px;
+  height: 370px;
+  border-radius: 3px;
+  top: 160px;
+  left: 165px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 5px 25px rgba(0, 0, 0, 0.5);
+  z-index: -2;
 }
 .main-page .main-img-section__img {
   width: 402px;
@@ -630,6 +664,24 @@
 .swiper-first .swiper-header__arrow {
   margin: 0 0 5px 5px;
 }
+.swiper-first .swiper-header__blur-element-1 {
+  position: absolute;
+  width: 1px;
+  top: 1780px;
+  left: 1300px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 187px 60px #FF00C8;
+  z-index: -2;
+}
+.swiper-first .swiper-header__blur-element-2 {
+  position: absolute;
+  width: 1px;
+  top: 1720px;
+  left: 270px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 117px 45px #FFB1EE;
+  z-index: -2;
+}
 .swiper-first .swiper-body {
   /*avtor-section*/
   /*wathc-section*/
@@ -641,6 +693,7 @@
   width: 1395px;
   margin: 40px auto 0;
   overflow: hidden;
+  z-index: -1;
 }
 .swiper-first .swiper-body__info {
   position: relative;
@@ -729,8 +782,15 @@
 }
 .swiper-first .swiper-body__button {
   margin: 15px 0 0 70px;
+}
+.swiper-first .swiper-body__button-border {
   padding: 2px;
   background: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
+  box-shadow: 0px 6px 50px 0px rgba(255, 86, 246, 0.51);
+  transition: box-shadow 0.5s ease-in-out;
+}
+.swiper-first .swiper-body__button-border:hover {
+  box-shadow: 0px 6px 70px 0px rgb(255, 105, 247);
 }
 .swiper-first .swiper-body__button-text {
   font-size: 23px;
@@ -938,6 +998,15 @@
   position: relative;
 }
 
+.tabs-header__blur-element-1 {
+  position: absolute;
+  width: 1px;
+  top: 120px;
+  left: 500px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 187px 60px #FF00C8;
+  z-index: -2;
+}
 .tabs-header__container {
   width: 781px;
   text-align: right;
@@ -957,6 +1026,9 @@
   border-image-slice: 3;
   opacity: 0.3;
   transition: background 0.5s ease, opacity 0.5s ease;
+}
+.tabs-header__item:hover {
+  opacity: 1;
 }
 .tabs-header__item_active {
   background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
@@ -1120,6 +1192,15 @@
 .swiper-seconds .swiper-header__arrow {
   margin: 0 0 5px 5px;
 }
+.swiper-seconds .swiper-header__blur-element-1 {
+  position: absolute;
+  width: 1px;
+  top: 3220px;
+  left: 1170px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 117px 45px #FFB1EE;
+  z-index: -2;
+}
 .swiper-seconds .swiper-body__block-overflow-hidden {
   padding-left: 8px;
   width: 1395px;
@@ -1185,8 +1266,16 @@
   margin-left: 65px;
 }
 .swiper-seconds .swiper-body__button-section {
-  margin-top: 51px;
-  padding-bottom: 34px;
+  margin: 51px auto 34px;
+}
+.swiper-seconds .swiper-body__button-outline {
+  padding: 11px 2px;
+  background: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
+  box-shadow: 0px 5px 117px 0px rgba(255, 86, 246, 0.51);
+  transition: box-shadow 0.5s ease-in-out;
+}
+.swiper-seconds .swiper-body__button-outline:hover {
+  box-shadow: 0px 15px 137px 0px rgb(255, 105, 247);
 }
 .swiper-seconds .swiper-body__button {
   padding: 11px 92px;
@@ -1194,9 +1283,6 @@
   font-weight: 600;
   font-family: "Rajdhani";
   background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
-  border: solid 2px;
-  border-image-source: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
-  border-image-slice: 1;
 }
 
 @media (max-width: 1440px) {
@@ -1325,7 +1411,7 @@
   }
 }
 .sellers .sellers-header__title-container {
-  margin-top: 156px;
+  margin-top: 162px;
   padding-left: 20px;
 }
 .sellers .sellers-header__dropdown-link {
@@ -1353,11 +1439,7 @@
 .sellers .sellers-body__overflow-hidden {
   overflow: hidden;
   height: 656px;
-  animation: fade 0.5s ease-in-out;
-}
-.sellers .sellers-body__active {
-  height: 100%;
-  animation: fade 0.5s ease-in-out;
+  transition: height 0.8s ease-in-out;
 }
 .sellers .sellers-body__content {
   margin: 55px 0 0 5px;
@@ -1407,16 +1489,21 @@
   padding-left: 16px;
   margin-top: 58px;
 }
+.sellers .sellers-body__botton-border {
+  padding: 2px;
+  background: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
+  box-shadow: 0px 5px 117px 0px #FF56F6;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.sellers .sellers-body__botton-border:hover {
+  box-shadow: 0px 5px 137px 10px rgb(255, 105, 247);
+}
 .sellers .sellers-body__botton {
   font-size: 20px;
   font-weight: 600;
   font-family: "Rajdhani";
   padding: 9px 75px 11px 80px;
   background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
-  border: 2px solid;
-  border-image-source: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
-  border-image-slice: 1;
-  box-shadow: 0px 5px 117px 0px #FF56F6;
 }
 .sellers .green {
   color: #0F6;
@@ -1429,20 +1516,12 @@
   background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1) 100%);
 }
 
-/*
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}*/
 @media (max-width: 1440px) {
   .sellers .sellers-body__overflow-hidden {
     height: 655px;
+  }
+  .sellers .sellers-body_active {
+    height: 977px;
   }
   .sellers .sellers-body__content {
     grid-template-columns: repeat(2, minmax(360px, 1fr));
@@ -1471,7 +1550,10 @@
     width: 325px;
   }
   .sellers .sellers-body__overflow-hidden {
-    height: 495px;
+    height: 497px;
+  }
+  .sellers .sellers-body_active {
+    height: 740px;
   }
   .sellers .sellers-body__content {
     margin: 37px 0 0 0;
@@ -1516,9 +1598,6 @@
   .sellers .sellers-header__title-container {
     margin: 105px 13px 0 0;
   }
-  .sellers .sellers-header__title {
-    font-size: 19px;
-  }
   .sellers .sellers-header__text {
     margin: 17px auto 0;
     font-size: 14px;
@@ -1526,6 +1605,9 @@
   }
   .sellers .sellers-body__overflow-hidden {
     height: 460px;
+  }
+  .sellers .sellers-body_active {
+    height: 1380px;
   }
   .sellers .sellers-body__content {
     margin: 27px 0 0 5px;
@@ -1796,7 +1878,7 @@
 }
 
 body {
-  background-color: #210C3B;
+  background-color: rgb(32, 8, 59);
   color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -1850,6 +1932,7 @@ h1, h2, h3, h4 {
 
 button {
   color: #FFFFFF;
+  border: none;
 }
 
 .title {
@@ -1871,7 +1954,7 @@ button {
   font-size: 12px;
   font-weight: 700;
   font-family: "Orbitron";
-  background: #210C3B;
+  background: rgb(32, 8, 59);
   clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
 }
 .button__arrow {

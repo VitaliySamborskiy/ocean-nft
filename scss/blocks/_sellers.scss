@@ -1,7 +1,7 @@
 .sellers {
     .sellers-header {
         &__title-container {
-            margin-top: 156px;
+            margin-top: 162px;
             padding-left: 20px; 
         }
 
@@ -35,12 +35,7 @@
         &__overflow-hidden{
             overflow: hidden;
             height: 656px;
-            animation: fade 0.5s ease-in-out;            
-        }
-
-        &__active {
-            height: 100%;
-            animation: fade 0.5s ease-in-out;
+            transition: height 0.8s ease-in-out;            
         }
 
         &__content {
@@ -100,16 +95,23 @@
             margin-top: 58px;
         }
 
+        &__botton-border {
+            padding: 2px;
+            background: $tabsItemGradient;
+            box-shadow: 0px 5px 117px 0px $sellersSelectColor;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        &__botton-border:hover {
+            box-shadow: 0px 5px 137px 10px $boxShadowVioletActive;
+        }
+
         &__botton {
             font-size: 20px;
             font-weight: 600;
             font-family: 'Rajdhani';
             padding: 9px 75px 11px 80px;
             background: $swiperBottonFill;
-            border: 2px solid;
-            border-image-source: $tabsItemGradient;
-            border-image-slice: 1;
-            box-shadow: 0px 5px 117px 0px $sellersSelectColor;
         }
     }
     .green {
@@ -123,23 +125,16 @@
         background: $sellersScoreFillRed;
     }
 }
-/*
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}*/
 
 @include respond-below(xl) {
     .sellers {
         .sellers-body {
             &__overflow-hidden{
                 height: 655px;
+            }
+
+            &_active {
+                height: 977px;
             }
 
             &__content {
@@ -181,7 +176,11 @@
         }
         .sellers-body {
             &__overflow-hidden{
-                height: 495px;             
+                height: 497px;       
+            }
+
+            &_active {
+                height: 740px;
             }
     
             &__content {
@@ -241,9 +240,7 @@
                 margin: 105px 13px 0 0; 
             }
 
-            &__title {
-                font-size: 19px;
-            }
+
 
             &__text { 
                 margin: 17px auto 0;
@@ -254,6 +251,10 @@
         .sellers-body {
             &__overflow-hidden{
                 height: 460px;             
+            }
+
+            &_active {
+                height: 1380px;
             }
     
             &__content {

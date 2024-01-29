@@ -1,7 +1,7 @@
 /* wathc */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const endDate = new Date('2024-01-25T23:59:59').getTime();
+    const endDate = new Date('2024-01-31T23:59:59').getTime();
     const timerInterval = setInterval(updateTimers, 1000);
 
     function updateTimers() {
@@ -99,9 +99,14 @@ document.querySelector('.tabs-header__item').click();
 
 /*sellers*/
 
-function toggleClass() {
-    const targetElement = document.querySelector('.sellers-body__element_click');
-    const currentClass = targetElement.classList.contains('sellers-body__active') ? 'sellers-body__active' : 'sellers-body__overflow-hidden';
-    targetElement.classList.remove(currentClass);
-    targetElement.classList.add(currentClass === 'sellers-body__active' ? 'sellers-body__overflow-hidden' : 'sellers-body__active');
-};
+// function toggleClass() {
+//     const targetElement = document.querySelector('.sellers-body__element_click');
+//     const currentClass = targetElement.classList.contains('sellers-body__active') ? 'sellers-body__active' : 'sellers-body__overflow-hidden';
+//     targetElement.classList.remove(currentClass);
+//     targetElement.classList.add(currentClass === 'sellers-body__active' ? 'sellers-body__overflow-hidden' : 'sellers-body__active');
+// };
+
+ function addClickHeight() {
+    let addHeight = document.querySelector('.sellers-body__overflow-hidden');
+    addHeight.classList.toggle('sellers-body_active');
+ };

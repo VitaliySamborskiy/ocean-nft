@@ -16,6 +16,16 @@
         &__arrow {
             margin: 0 0 5px 5px;
         }
+
+        &__blur-element-1 {
+            position: absolute;
+            width:1px;
+            top: 3220px;
+            left: 1170px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 117px 45px $boxShadowPinkLite;
+            z-index: -2;
+        }
     }
     
     .swiper-body {
@@ -98,8 +108,18 @@
         }
         
         &__button-section {
-            margin-top: 51px;
-            padding-bottom: 34px;
+            margin: 51px auto 34px; 
+        }
+
+        &__button-outline {
+            padding: 11px 2px;
+            background: $tabsItemGradient;
+            box-shadow: 0px 5px 117px 0px $boxShadowViolet;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        &__button-outline:hover  {
+            box-shadow: 0px 15px 137px 0px $boxShadowVioletActive;
         }
     
         &__button {
@@ -108,9 +128,6 @@
             font-weight: 600;
             font-family: 'Rajdhani';
             background: $swiperBottonFill;
-            border: solid 2px;
-            border-image-source: $tabsItemGradient;
-            border-image-slice: 1;
         }
     }   
 }

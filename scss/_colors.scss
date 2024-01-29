@@ -1,6 +1,6 @@
 /*main-colors*/
 
-$blueBackgroundColor: #210C3B;
+$blueBackgroundColor: rgba(32, 8, 59, 1);
 $whiteFontsColor: #FFFFFF;
 
 /*main-section*/
@@ -34,4 +34,7 @@ $sellersScoreTextRed: #F00;
 $sellersText: rgba(255, 255, 255, 0.80);
 
 $boxShadowViolet: rgba(255, 86, 246, 0.51);
+$boxShadowVioletActive:rgb(255, 105, 247);
+$boxShadowPink: #FF00C8;
+$boxShadowPinkLite: #FFB1EE;
 $textGray: var(--Text-Gray-800, #474A57);

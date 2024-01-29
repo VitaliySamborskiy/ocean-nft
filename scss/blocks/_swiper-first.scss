@@ -18,14 +18,37 @@
         &__arrow {
             margin: 0 0 5px 5px;
         }
+
+        &__blur-element-1 {
+            position: absolute;
+            width:1px;
+            top: 1780px;
+            left: 1300px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 5px 187px 60px $boxShadowPink;
+            z-index: -2;
+        }
+    
+        &__blur-element-2 {
+            position: absolute;
+            width:1px;
+            top: 1720px;
+            left: 270px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 117px 45px $boxShadowPinkLite;
+            z-index: -2;
+        }
     }
+
     .swiper-body {
 
         &__overflow-hidden {
+            // position: relative;
             padding-left: 8px;
             width: 1395px;
             margin: 40px auto 0;
             overflow: hidden;
+            z-index: -1;
         }
       
         &__info {
@@ -142,8 +165,17 @@
 
         &__button {
             margin: 15px 0 0 70px;
+        }
+
+        &__button-border {
             padding: 2px;
-            background: $tabsItemGradient;   
+            background: $tabsItemGradient;
+            box-shadow: 0px 6px 50px 0px $boxShadowViolet;
+            transition: box-shadow 0.5s ease-in-out;            
+        }
+
+        &__button-border:hover  {
+            box-shadow: 0px 6px 70px 0px $boxShadowVioletActive;
         }
 
         &__button-text {
