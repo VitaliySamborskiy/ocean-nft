@@ -1,0 +1,123 @@
+.footer {
+    a {
+        font-family: 'Inter';
+    }
+
+    &__content {
+        margin-top: 152px;
+        width: 1339px;
+    }
+    
+    &__horizontal-line {
+        width: 100%;
+        height: 1px;
+        opacity: 0.2;
+        background: $whiteFontsColor;
+    }
+
+    &__margin {
+        margin-top: 75px;
+    }
+
+    .footer-main-info {
+        &__content {
+            margin-top: 98px;
+        }
+        // &__logo-link {
+        // }
+        // &__logo-svg {
+        // }
+
+        &_text {
+            color: $footerColor;
+            font-size: 15px;
+            margin-top: 32px;
+            width: 288px;
+            font-family: 'Inter';
+            font-weight: 400;
+            line-height: 171%;
+        }
+
+        // &__svg-link {
+        // }
+
+        &__Items {
+            margin-top: 27px;
+            gap: 18px;
+        }
+
+        // &__Item {
+        // }
+    }
+    
+    .footer-menu {
+        &__content {
+            gap: 33px;
+            margin: 98px 0 0 65px;
+        }
+
+        &__colum {
+            width: 177px;
+        }
+
+        // &__titel-section {
+
+        // }
+        &__title {
+            color: $footerColor;
+            font-size: 20px;
+            font-family: 'Inter';
+            font-weight: 500;
+        }
+
+        &__arrow-menu {
+            display: none;
+        }
+
+        &__items {
+            margin-top: 25px;
+            gap: 15px;
+        }
+
+        &__item{
+            color: $footerColor;
+            font-size: 15px;
+            font-weight: 400;     
+        }
+      
+        &__new {
+            color: $footerNew;
+            font-size: 22px;
+            font-weight: 400;
+            margin-left: 9px;
+            font-family: 'MuseoModerno';
+        }
+    }
+    
+    .foter-copyright {
+        &__content {
+            margin-top: 29px;
+        }
+
+        &__text {
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Inter';
+        }
+
+        &__items {
+            gap: 13px;
+        }
+
+        &__item {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        &__vertical-line {
+            background-color: $footerColor;
+            width: 2px;
+            height: 17px;
+        }
+    }
+}
