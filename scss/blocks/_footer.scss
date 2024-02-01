@@ -16,13 +16,14 @@
     }
 
     &__margin {
-        margin-top: 75px;
+        margin-top: 70px;
     }
 
     .footer-main-info {
         &__content {
             margin-top: 98px;
         }
+
         // &__logo-link {
         // }
         // &__logo-svg {
@@ -56,13 +57,22 @@
             margin: 98px 0 0 65px;
         }
 
+        &__horizontal-line {
+            display: none;
+            width: 100%;
+            height: 1px;
+            opacity: 0.2;
+            background: $whiteFontsColor;
+        }
+
         &__colum {
             width: 177px;
         }
 
-        // &__titel-section {
+        &__titel-section {
+            pointer-events: none;
+        }
 
-        // }
         &__title {
             color: $footerColor;
             font-size: 20px;
@@ -82,7 +92,17 @@
         &__item{
             color: $footerColor;
             font-size: 15px;
-            font-weight: 400;     
+            font-weight: 400;
+            line-height: 171%;
+            transition: text-shadow 0.5s ease-in-out;
+        }
+
+        &__item:hover {
+            text-shadow:
+            -5px -5px 25px $boxShadowVioletActive, 
+            5px -5px 25px $boxShadowVioletActive,  
+            -5px 5px 25px $boxShadowVioletActive,  
+            5px 5px 25px $boxShadowVioletActive; 
         }
       
         &__new {
@@ -90,13 +110,15 @@
             font-size: 22px;
             font-weight: 400;
             margin-left: 9px;
+            line-height: 17px;
             font-family: 'MuseoModerno';
         }
     }
     
     .foter-copyright {
         &__content {
-            margin-top: 29px;
+            margin-top: 24px;
+            margin-bottom: 27px;
         }
 
         &__text {
@@ -112,12 +134,197 @@
         &__item {
             font-size: 15px;
             font-weight: 400;
+            transition: text-shadow 0.5s ease-in-out;
+        }
+
+        &__item:hover {
+            text-shadow:
+            -5px -5px 25px $boxShadowVioletActive, 
+            5px -5px 25px $boxShadowVioletActive,  
+            -5px 5px 25px $boxShadowVioletActive,  
+            5px 5px 25px $boxShadowVioletActive; 
         }
 
         &__vertical-line {
             background-color: $footerColor;
             width: 2px;
             height: 17px;
+        }
+    }
+}
+
+@include respond-below(xl) {
+    .footer {
+    
+        &__content {
+            margin-top: 120px;
+            width: 100%;
+        }
+    
+        &__margin {
+            margin-top: 50px;
+        }
+    
+        .footer-main-info {
+            &__content {
+                margin-top: 70px;
+            }
+    
+            &_text {
+                width: 200px;
+            }
+
+            &__Items {
+                margin-top: 27px;
+                gap: 18px;
+            }
+        }
+        
+        .footer-menu {
+                
+            &__colum {
+                width: 160px;
+            }
+        }        
+    }
+}
+
+@include respond-below(md) {
+    .footer {
+    
+        &__content {
+            margin-top: 108px;
+        }
+
+        &__block {
+            display: grid !important;
+        }
+
+        &__margin {
+            display: none;
+        }
+    
+        .footer-main-info {
+            &__content {
+                margin-top: 32px;
+            }
+
+            &_text {
+                color: $footerColor;
+                width: 80%;
+            }
+        }
+        
+        .footer-menu {
+            &__content {
+                gap: 16px;
+                margin: 50px 0 0 0px;
+                display: grid !important;
+            }
+
+            &__horizontal-line {
+                display: flex;
+            }
+    
+            &__colum {
+                width: 95%;
+                height: 31px;
+                overflow: hidden;
+                transition: height 0.8s ease-in-out;
+            }
+
+            &__colum_active {
+                height: 270px;
+            }
+    
+            &__titel-section {
+                pointer-events: auto;
+            }
+    
+            &__arrow-menu {
+                display: flex;
+                transform: rotate(0deg);
+                transition: all 0.8s ease-in-out;
+            }
+
+            &__arrow-menu_active {
+                transform: rotate(180deg);
+            }
+    
+            &__items {
+                margin: 30px 0 0 15px;
+            }
+        }
+        
+        .foter-copyright {
+            &__content {
+                margin-top: 44px;
+            }
+
+            &__item:last-child {
+                display: none;
+            }
+    
+            &__vertical-line {
+                display: none;
+            }
+        }
+    }
+}
+
+@include respond-below(sm) {
+    .footer {
+    
+        .footer-main-info {
+            &__content {
+                margin-top: 26px;
+            }
+
+            &_text {
+                color: $footerColor;
+                width: 100%;
+            }
+        }
+        
+        .footer-menu {
+            &__content {
+                gap: 16px;
+                margin: 38px 0 0 0px;
+            }
+    
+            &__colum {
+                height: 31px;
+            }
+
+            &__colum_active {
+                height: 270px;
+            }
+    
+            &__arrow-menu {
+                transform: rotate(0deg);
+            }
+
+            &__arrow-menu_active {
+                transform: rotate(180deg);
+            }
+        }
+        
+        .foter-copyright {
+
+            &__items{
+                margin: 0 auto;
+                gap: 40px;
+            }
+
+            &__content {
+                flex-direction: column-reverse;
+            }
+
+            &__text {
+                margin-top: 38px;
+                text-align: center;
+            }
+    
         }
     }
 }

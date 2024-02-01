@@ -1,6 +1,5 @@
 .header {
     &__section {
-        // position: relative;
         margin: 49px 0 0 8px;
     }
 
@@ -14,7 +13,7 @@
         font-weight: 700;
         font-family: 'Orbitron';
         opacity: 0.6;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
 
     &__items-svg {
@@ -24,6 +23,11 @@
 
     &__item:hover {
         opacity: 1;
+        text-shadow:
+            -5px -5px 23px $boxShadowVioletActive, 
+            5px -5px 25px $boxShadowVioletActive,  
+            -5px 5px 25px $boxShadowVioletActive,  
+            5px 5px 25px $boxShadowVioletActive; 
     }
 }
 
@@ -64,7 +68,7 @@
     .header{
         &__section {
             margin: 22px 0 0 0;
-            width: 92%;
+            width: 100%;
         }
 
         &__mobile-logo {

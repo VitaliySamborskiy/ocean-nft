@@ -20,8 +20,8 @@
         &__blur-element-1 {
             position: absolute;
             width:1px;
-            top: 3220px;
-            left: 1170px;
+            top: 350%;
+            left: 60%;
             backdrop-filter: blur(30px);
             box-shadow: 0px 0px 117px 45px $boxShadowPinkLite;
             z-index: -2;
@@ -139,6 +139,11 @@
                 margin-top: 192px;
                 width: 100%;
             }
+
+            &__blur-element-1 {
+                top: 370%;
+                left: 70%;
+            }
         }
         .swiper-body {
             &__block {
@@ -166,6 +171,11 @@
             &__title {
                 margin-left: 0;
                 font-size: 18px;
+            }
+
+            &__blur-element-1 {
+                top: 250%;
+                left: 70%;
             }
         }
         .swiper-body {
@@ -231,10 +241,13 @@
             &__artworks {
                 margin-left: 40px;
             }
+
+            &__button-outline {
+                padding: 5px 2px 8px;
+            }
             
             &__button-section {
-                margin-top: 30px;
-                padding-bottom: 25px;
+                margin: 30px auto 25px; 
             }
         
             &__button {
@@ -295,6 +308,10 @@
             
             &__button-section {
                 margin-top: 30px;
+            }
+
+            &__button-outline {
+                padding: 4px 2px 7px;
             }
         
             &__button {

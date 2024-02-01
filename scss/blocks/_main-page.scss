@@ -270,6 +270,19 @@
             margin-top: 70px; 
         }
 
+        &__blur-element-1 {
+            top: 70%;
+        }
+    
+        &__blur-element-2 {
+            top: 50%;
+            left: 56%;
+        }
+    
+        &__background-element {
+            display: none;
+        }
+
         .main-text-section {
             &__title {
                 width: 700px;
@@ -277,6 +290,12 @@
         }
 
         .main-img-section {
+
+            &__blur-img {
+                top: 36%;
+                left: 19%;
+            }
+
             &__img {
                 margin: 140px 0 0 70px;
             }
@@ -366,6 +385,13 @@
         }
 
         .main-img-section {
+
+            &__blur-img {
+                height: 250px;
+                top: 18%;
+                left: 13%;
+            }
+
             &__img {
                 width: 305px;
                 height: 100%;
@@ -412,6 +438,12 @@
 
         .main-img-section {
             order: 3;
+
+            &__blur-img {
+                height: 78%;
+                top: 18%;
+                left: 6%;
+            }
 
             &__border-information {
                 bottom: -130px;

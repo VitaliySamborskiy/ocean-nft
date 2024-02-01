@@ -22,8 +22,8 @@
         &__blur-element-1 {
             position: absolute;
             width:1px;
-            top: 1780px;
-            left: 1300px;
+            top: 190%;
+            left: 65%;
             backdrop-filter: blur(30px);
             box-shadow: 0px 5px 187px 60px $boxShadowPink;
             z-index: -2;
@@ -32,8 +32,8 @@
         &__blur-element-2 {
             position: absolute;
             width:1px;
-            top: 1720px;
-            left: 270px;
+            top: 180%;
+            left: 15%;
             backdrop-filter: blur(30px);
             box-shadow: 0px 0px 117px 45px $boxShadowPinkLite;
             z-index: -2;
@@ -198,6 +198,16 @@
                 margin-top: 200px;
                 width: 100%;
             }
+
+            &__blur-element-1 {
+                top: 205%;
+                left: 70%;
+            }
+
+            &__blur-element-2 {
+                top: 195%;
+                left: 10%;
+            }
         }
         .swiper-body {
             &__content {
@@ -221,7 +231,18 @@
             &__link {
                 display: none;
             }
+
+            &__blur-element-1 {
+                top: 140%;
+                left: 70%;
+            }
+
+            &__blur-element-2 {
+                top: 127%;
+                left: 22%;
+            }
         }
+
         .swiper-body {
             &__content {
                 width: 900px;
@@ -442,10 +463,6 @@
                 width: 20px;
                 height: 10px;
                 margin-left: 15px;
-            }
-
-            &__button-border {
-                margin: 37px auto 0;
             }
         }
     }
