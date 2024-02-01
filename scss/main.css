@@ -193,13 +193,13 @@
   left: 0;
 }
 .burger-menu_active .burger-menu__icon span:nth-child(1) {
-  transform: rotate(-45deg) translate(-6px, 13px);
+  transform: rotate(-45deg) translate(-5px, 13px);
 }
 .burger-menu_active .burger-menu__icon span:nth-child(2) {
   opacity: 0;
 }
 .burger-menu_active .burger-menu__icon span:nth-child(3) {
-  transform: rotate(45deg) translate(-1px, -6px);
+  transform: rotate(45deg) translate(0px, -8px);
 }
 .burger-menu__header {
   background-color: #020202;
@@ -209,6 +209,13 @@
 .burger-menu__logo {
   width: 200px;
   margin: 45px 0 0 70px;
+}
+.burger-menu__items-block {
+  height: 68%;
+  overflow: scroll;
+}
+.burger-menu__items-block::-webkit-scrollbar {
+  display: none;
 }
 .burger-menu__items {
   gap: 30px;

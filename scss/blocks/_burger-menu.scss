@@ -37,7 +37,7 @@
     &__icon {
     span {
     &:nth-child(1) {
-        transform: rotate(-45deg) translate(-6px, 13px); 
+        transform: rotate(-45deg) translate(-5px, 13px); 
     }}}
 
     &_active
@@ -51,7 +51,7 @@
     &__icon {
     span {
     &:nth-child(3) {
-        transform: rotate(45deg) translate(-1px, -6px);
+        transform: rotate(45deg) translate(-0px, -8px);
     }}}
 
     &__header {
@@ -63,6 +63,15 @@
     &__logo {
         width: 200px;
         margin: 45px 0 0 70px;
+    }
+
+    &__items-block {
+        height: 68%;
+        overflow: scroll;
+    }
+
+    &__items-block::-webkit-scrollbar{
+        display: none;
     }
 
     &__items {
