@@ -42,6 +42,7 @@
             background: $mainInfoTableFill;
             border: 3px solid $MainInfoBorder;
             backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);    
         }
 
         &__img-background {

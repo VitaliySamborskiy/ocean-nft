@@ -19,6 +19,9 @@ $burgerHeader: #020202;
 $MainInfoBorder: rgba(255, 255, 255, 0.28);
 $BurgerMenu: #161516;
 
+$Main: rgba(10, 10, 10, 0.397);
+$mainBorder: rgba(255, 255, 255, 0.281);
+
 $swiperBottonFill: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
 $tabsItemGradient: linear-gradient(90deg, rgba(60,121,212,1) 0%, rgba(255,166,250,1) 50%);
 
@@ -37,6 +40,6 @@ $boxShadowViolet: rgba(255, 86, 246, 0.51);
 $boxShadowVioletActive:rgb(255, 105, 247);
 $boxShadowPink: #FF00C8;
 $boxShadowPinkLite: #FFB1EE;
-$textGray: var(--Text-Gray-800, #474A57);
+$textGray: var( #474A57);
 $footerColor:#D9DBE1;
 $footerNew: #2EC5CE;

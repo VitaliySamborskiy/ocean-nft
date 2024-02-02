@@ -22,6 +22,7 @@
         border-radius: 3px;
         border: 3px solid $MainInfoBorder;
         backdrop-filter: blur(73px);
+        -webkit-backdrop-filter: blur(73px);
     }
 
     &__title {

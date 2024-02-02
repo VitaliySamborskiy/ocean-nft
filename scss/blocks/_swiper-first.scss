@@ -25,6 +25,7 @@
             top: 190%;
             left: 65%;
             backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
             box-shadow: 0px 5px 187px 60px $boxShadowPink;
             z-index: -2;
         }
@@ -35,6 +36,7 @@
             top: 180%;
             left: 15%;
             backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
             box-shadow: 0px 0px 117px 45px $boxShadowPinkLite;
             z-index: -2;
         }
@@ -58,6 +60,7 @@
             background: $mainInfoTableFill;
             border: 3px solid $MainInfoBorder;
             backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
         }
 
         /*avtor-section*/

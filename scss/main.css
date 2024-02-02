@@ -193,13 +193,15 @@
   left: 0;
 }
 .burger-menu_active .burger-menu__icon span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 13px);
+  transform: rotate(-45deg) translate(-8.6px, 5px);
+  width: 21px;
 }
 .burger-menu_active .burger-menu__icon span:nth-child(2) {
   opacity: 0;
 }
 .burger-menu_active .burger-menu__icon span:nth-child(3) {
-  transform: rotate(45deg) translate(0px, -8px);
+  transform: rotate(45deg) translate(-8px, -5px);
+  width: 21px;
 }
 .burger-menu__header {
   background-color: #020202;
@@ -229,6 +231,7 @@
   padding: 0 40px;
 }
 .burger-menu__icon {
+  cursor: pointer;
   width: 25px;
   height: 22px;
   position: absolute;
@@ -290,6 +293,7 @@
   width: 1px;
   top: 610px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 5px 187px 50px #FF00C8;
   z-index: -2;
 }
@@ -299,6 +303,7 @@
   top: 420px;
   left: 630px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 0px 117px 25px #FFB1EE;
   z-index: -2;
 }
@@ -391,6 +396,7 @@
   top: 160px;
   left: 165px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 5px 5px 25px rgba(0, 0, 0, 0.5);
   z-index: -2;
 }
@@ -402,18 +408,19 @@
 }
 .main-page .main-img-section__border-information {
   padding: 2px;
-  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.281);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   clip-path: polygon(99.721% 74.86%, 99.721% 94.754%, 99.721% 94.754%, 99.687% 95.542%, 99.587% 96.29%, 99.428% 96.987%, 99.215% 97.623%, 98.952% 98.19%, 98.647% 98.675%, 98.303% 99.07%, 97.926% 99.365%, 97.522% 99.549%, 97.097% 99.613%, 2.624% 99.613%, 2.624% 99.613%, 2.199% 99.549%, 1.795% 99.365%, 1.418% 99.07%, 1.074% 98.675%, 0.769% 98.19%, 0.506% 97.623%, 0.293% 96.987%, 0.134% 96.29%, 0.034% 95.542%, 0% 94.754%, 0% 27.075%, 0% 27.075%, 0.008% 26.689%, 0.033% 26.308%, 0.074% 25.933%, 0.13% 25.566%, 0.201% 25.209%, 0.288% 24.864%, 0.388% 24.531%, 0.503% 24.214%, 0.632% 23.912%, 0.774% 23.629%, 12.846% 1.413%, 12.846% 1.413%, 12.998% 1.153%, 13.16% 0.918%, 13.331% 0.709%, 13.51% 0.525%, 13.695% 0.367%, 13.886% 0.237%, 14.083% 0.134%, 14.284% 0.06%, 14.489% 0.015%, 14.696% 0%, 97.097% 0%, 97.097% 0%, 97.522% 0.064%, 97.926% 0.248%, 98.303% 0.542%, 98.647% 0.938%, 98.952% 1.423%, 99.215% 1.989%, 99.428% 2.626%, 99.587% 3.323%, 99.687% 4.071%, 99.721% 4.859%, 99.721% 74.86%);
   position: absolute;
   bottom: 158px;
-  right: -3px;
+  right: 0px;
 }
 .main-page .main-img-section__fill-information {
-  background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
-  width: 334px;
+  background: rgba(10, 10, 10, 0.397);
+  width: 332px;
   height: 179px;
   clip-path: polygon(99.721% 74.86%, 99.721% 94.754%, 99.721% 94.754%, 99.687% 95.542%, 99.587% 96.29%, 99.428% 96.987%, 99.215% 97.623%, 98.952% 98.19%, 98.647% 98.675%, 98.303% 99.07%, 97.926% 99.365%, 97.522% 99.549%, 97.097% 99.613%, 2.624% 99.613%, 2.624% 99.613%, 2.199% 99.549%, 1.795% 99.365%, 1.418% 99.07%, 1.074% 98.675%, 0.769% 98.19%, 0.506% 97.623%, 0.293% 96.987%, 0.134% 96.29%, 0.034% 95.542%, 0% 94.754%, 0% 27.075%, 0% 27.075%, 0.008% 26.689%, 0.033% 26.308%, 0.074% 25.933%, 0.13% 25.566%, 0.201% 25.209%, 0.288% 24.864%, 0.388% 24.531%, 0.503% 24.214%, 0.632% 23.912%, 0.774% 23.629%, 12.846% 1.413%, 12.846% 1.413%, 12.998% 1.153%, 13.16% 0.918%, 13.331% 0.709%, 13.51% 0.525%, 13.695% 0.367%, 13.886% 0.237%, 14.083% 0.134%, 14.284% 0.06%, 14.489% 0.015%, 14.696% 0%, 97.097% 0%, 97.097% 0%, 97.522% 0.064%, 97.926% 0.248%, 98.303% 0.542%, 98.647% 0.938%, 98.952% 1.423%, 99.215% 1.989%, 99.428% 2.626%, 99.587% 3.323%, 99.687% 4.071%, 99.721% 4.859%, 99.721% 74.86%);
-  backdrop-filter: blur(30px);
   padding: 25px 0 0 17px;
 }
 .main-page .main-img-section__arrow {
@@ -708,6 +715,7 @@
   top: 190%;
   left: 65%;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 5px 187px 60px #FF00C8;
   z-index: -2;
 }
@@ -717,6 +725,7 @@
   top: 180%;
   left: 15%;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 0px 117px 45px #FFB1EE;
   z-index: -2;
 }
@@ -740,6 +749,7 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
   border: 3px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 .swiper-first .swiper-body__avtor-section {
   margin-left: 5px;
@@ -1055,6 +1065,7 @@
   top: 120px;
   left: 500px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 5px 187px 60px #FF00C8;
   z-index: -2;
 }
@@ -1168,7 +1179,7 @@
     height: 60px;
   }
   .tabs-header__link {
-    font-size: 8px;
+    font-size: 14px;
     display: inline-block;
   }
   .tabs-header__arrow {
@@ -1212,7 +1223,6 @@
   }
   .tabs-header__link {
     font-size: 8px;
-    display: inline-block;
   }
   .tabs-header__arrow {
     margin-left: 4px;
@@ -1264,6 +1274,7 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.02) 104.35%);
   border: 3px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 .swiper-seconds .swiper-body__img-background {
   position: absolute;
@@ -1517,6 +1528,7 @@
   border-radius: 29px;
   border: 3px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(38px);
+  -webkit-backdrop-filter: blur(38px);
 }
 .sellers .sellers-body__number {
   font-size: 19px;
@@ -1732,6 +1744,7 @@
   border-radius: 3px;
   border: 3px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(73px);
+  -webkit-backdrop-filter: blur(73px);
 }
 .text__title {
   font-size: 45px;
@@ -1845,7 +1858,7 @@
 }
 .subscribe__input {
   padding: 14px 54px 14px 18px;
-  color: var(--Text-Gray-800, #474A57);
+  color: var(#474A57);
   font-size: 15px;
   font-family: "Inter";
   border-radius: 6px 0 0 6px;
@@ -2194,11 +2207,15 @@ select:active {
 }
 
 select:focus {
-  border: 0;
+  outline: none;
 }
 
 input {
   border: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 option {
@@ -2237,13 +2254,15 @@ button {
   display: none;
 }
 .button__border {
-  margin: 40px auto 0;
-  padding: 5px 2px 11px 2px;
+  margin: 39px auto 0;
+  padding: 2px;
   background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
   clip-path: polygon(17.985% 3.711%, 97.904% 3.711%, 97.904% 3.711%, 98.114% 3.772%, 98.313% 3.948%, 98.498% 4.231%, 98.667% 4.609%, 98.818% 5.075%, 98.947% 5.617%, 99.052% 6.228%, 99.13% 6.896%, 99.179% 7.612%, 99.196% 8.368%, 99.196% 69.725%, 99.196% 69.725%, 99.188% 70.253%, 99.164% 70.768%, 99.124% 71.266%, 99.069% 71.741%, 99% 72.191%, 98.918% 72.611%, 98.823% 72.997%, 98.717% 73.345%, 98.599% 73.65%, 98.472% 73.909%, 85.715% 96.374%, 85.715% 96.374%, 85.661% 96.463%, 85.607% 96.543%, 85.552% 96.614%, 85.496% 96.675%, 85.439% 96.727%, 85.382% 96.77%, 85.324% 96.804%, 85.266% 96.828%, 85.207% 96.842%, 85.148% 96.847%, 2.321% 96.847%, 2.321% 96.847%, 2.111% 96.786%, 1.913% 96.609%, 1.727% 96.327%, 1.558% 95.948%, 1.408% 95.483%, 1.279% 94.94%, 1.173% 94.33%, 1.095% 93.662%, 1.046% 92.946%, 1.029% 92.19%, 1.029% 35.13%, 1.029% 35.13%, 1.038% 34.595%, 1.063% 34.075%, 1.104% 33.573%, 1.159% 33.093%, 1.229% 32.64%, 1.313% 32.217%, 1.409% 31.83%, 1.518% 31.482%, 1.638% 31.178%, 1.768% 30.922%, 17.432% 4.16%, 17.432% 4.16%, 17.484% 4.075%, 17.537% 3.999%, 17.591% 3.932%, 17.646% 3.874%, 17.702% 3.824%, 17.757% 3.784%, 17.814% 3.752%, 17.871% 3.729%, 17.928% 3.715%, 17.985% 3.711%);
 }
 .button__text {
-  padding: 9px 17px 12px 28px;
+  width: 133px;
+  height: 34px;
+  padding: 8px 0 0 28px;
   font-size: 12px;
   font-weight: 700;
   font-family: "Orbitron";
