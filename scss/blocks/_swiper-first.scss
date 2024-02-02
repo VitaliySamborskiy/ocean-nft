@@ -43,14 +43,15 @@
     }
 
     .swiper-body {
+        
 
         &__overflow-hidden {
-            // position: relative;
+            transform: translateZ(0);
             padding-left: 8px;
             width: 1395px;
             margin: 40px auto 0;
             overflow: hidden;
-            z-index: -1;
+            z-index: -2;
         }
       
         &__info {

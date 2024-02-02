@@ -58,13 +58,13 @@
 
     &__header {
         background-color: $burgerHeader;
-        height: 150px;
+        height: 140px;
         z-index: 1;
     }
 
     &__logo {
-        width: 200px;
-        margin: 45px 0 0 70px;
+        width: 150px;
+        margin: 50px 0 0 70px;
     }
 
     &__items-block {
@@ -142,13 +142,22 @@
 
 @include respond-below(sm) {
     .burger-menu{
+
+        &__header {
+            height: 80px;
+        }
+
         &__horizontal-line {
             width: 260px;
         }
 
+        &__items-block {
+            height: 78%;
+        }
+
         &__logo {
-            width: 140px;
-            margin: 50px 0 0 45px;
+            width: 120px;
+            margin: 25px 0 0 45px;
         }
 
         &__icon {
